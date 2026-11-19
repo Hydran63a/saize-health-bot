@@ -7,7 +7,8 @@ import config
 
 @pytest.fixture
 def clean_env(monkeypatch):
-    for name in ("MISSKEY_HOST", "MISSKEY_TOKEN", "ENABLE_POSTING", "HTTP_TIMEOUT", "LOG_LEVEL", "DB_PATH", "POST_TIMES", "TIMEZONE"):
+    for name in ("MISSKEY_HOST", "MISSKEY_TOKEN", "ENABLE_POSTING", "HTTP_TIMEOUT", "LOG_LEVEL", "DB_PATH", "POST_TIMES", "TIMEZONE",
+                 "NO_REPEAT_COMBO_DAYS", "NO_REPEAT_STAPLE_DAYS"):
         monkeypatch.delenv(name, raising=False)
     return monkeypatch
 
@@ -55,6 +56,18 @@ def test_post_times_can_be_overridden_and_sorted(clean_env, tmp_path):
 def test_invalid_post_times_raise(bad):
     with pytest.raises(ValueError):
         config.parse_post_times(bad)
+
+
+def test_default_no_repeat_days(clean_env, tmp_path):
+    settings = config.load_settings(env_file=tmp_path / "missing.env")
+    assert settings.no_repeat_combo_days == 30
+    assert settings.no_repeat_staple_days == 3
+
+
+def test_invalid_no_repeat_days_raise(clean_env, tmp_path):
+    clean_env.setenv("NO_REPEAT_COMBO_DAYS", "-1")
+    with pytest.raises(ValueError):
+        config.load_settings(env_file=tmp_path / "missing.env")
 
 
 def test_env_example_has_no_real_secrets():

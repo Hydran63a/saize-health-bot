@@ -18,6 +18,17 @@ _TRUE_VALUES = {"1", "true", "yes", "on"}
 
 DEFAULT_POST_TIMES = "11:00,15:00"
 DEFAULT_TIMEZONE = "Asia/Tokyo"
+DEFAULT_NO_REPEAT_COMBO_DAYS = 30
+DEFAULT_NO_REPEAT_STAPLE_DAYS = 3
+
+
+def _get_days(name: str, default: int) -> int:
+    value = os.getenv(name)
+    if value is None or value.strip() == "":
+        return default
+    if not value.strip().isdigit():
+        raise ValueError(f"環境変数 {name} は0以上の整数（日数）で指定してください: {value!r}")
+    return int(value)
 
 
 def parse_post_times(text: str) -> tuple[tuple[int, int], ...]:
@@ -66,6 +77,9 @@ class Settings:
     # おすすめ投稿の時刻（timezone での時刻）。自動投稿は ENABLE_POSTING=true のときのみ
     post_times: tuple[tuple[int, int], ...]
     timezone: str
+    # 重複防止：同じ組み合わせ／同じ主食をおすすめしない日数
+    no_repeat_combo_days: int
+    no_repeat_staple_days: int
 
     @property
     def post_times_text(self) -> str:
@@ -94,4 +108,6 @@ def load_settings(env_file: Path | None = None) -> Settings:
         log_dir=BASE_DIR / "logs",
         post_times=parse_post_times(os.getenv("POST_TIMES") or DEFAULT_POST_TIMES),
         timezone=(os.getenv("TIMEZONE") or DEFAULT_TIMEZONE).strip(),
+        no_repeat_combo_days=_get_days("NO_REPEAT_COMBO_DAYS", DEFAULT_NO_REPEAT_COMBO_DAYS),
+        no_repeat_staple_days=_get_days("NO_REPEAT_STAPLE_DAYS", DEFAULT_NO_REPEAT_STAPLE_DAYS),
     )

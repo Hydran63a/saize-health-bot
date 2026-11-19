@@ -1,3 +1,5 @@
 # 本番環境（Windows開発機・Linux VPS共通）で必要なライブラリ
 httpx>=0.28,<1.0
 python-dotenv>=1.0,<2.0
+# タイムゾーンのデータ（Windows には標準で入っていないため。Linux でも害はない）
+tzdata>=2024.1

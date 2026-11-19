@@ -9,7 +9,7 @@
 - [x] Phase 1：開発環境構築
 - [ ] Phase 2：メニューデータ収集
 - [x] Phase 3：栄養評価機能（`python -m modules.nutrition 料理名 料理名 ...` で確認）
-- [ ] Phase 4：おすすめ生成
+- [ ] Phase 4：おすすめ生成（バランス献立・重複防止は実装済み。`python -m modules.recommendation --simulate 20` で確認。文章生成・予算別は未実装）
 - [ ] Phase 5：Misskey連携
 - [ ] Phase 6：VPS移行
 
