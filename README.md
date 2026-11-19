@@ -42,6 +42,24 @@ python main.py
 
 公式に掲載されていない栄養素（飽和脂肪酸・食物繊維など）は `null`（`not_published`）とし、推定値は別ファイルで管理します。
 
+### 推定値（公式値ではありません）
+
+- `data/recipes.json`：料理ごとの材料と分量の**仮定**（公式レシピではありません）
+- `data/food_subset.json`：上記で使う食品の成分値（成分表からの抜粋）
+- `data/estimates.json`：推定結果。計算エネルギーを公式エネルギーに合わせて調整し、信頼度を付与
+
+再生成の手順（成分表Excelが必要。`data/external/` に置く。Git管理外）：
+
+```powershell
+python -m modules.food_composition export   # food_subset.json を更新
+python -m modules.estimator                 # estimates.json を更新
+```
+
+成分表Excel（[文部科学省](https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html)）：
+本表 第2章 → `data/external/mext_honpyo_ch2.xlsx`、脂肪酸成分表編 第2章第1表 → `data/external/mext_fattyacid_ch2_t1.xlsx`
+
+**出典：日本食品標準成分表（八訂）増補2023年から引用（文部科学省）**
+
 ## 動作要件
 
 - Python 3.12 以上

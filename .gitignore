@@ -10,6 +10,9 @@ __pycache__/
 venv/
 .pytest_cache/
 
+# 外部からダウンロードした大きな元データ（取得手順は README を参照）
+data/external/
+
 # 実行時に生成されるファイル
 logs/*
 !logs/.gitkeep

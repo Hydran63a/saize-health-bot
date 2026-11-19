@@ -1,0 +1,931 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-19",
+  "status": "estimated",
+  "disclaimer": "推定値です。サイゼリヤの公式値ではありません。材料と分量は、一般的な調理法と公式アレルゲン表示を手がかりにした仮定です。サイゼリヤの公式レシピではありません。推定値の計算にのみ使用し、公式値としては扱いません。",
+  "citation": "日本食品標準成分表（八訂）増補2023年から引用（文部科学省）",
+  "official_source": "https://allergy.saizeriya.co.jp/allergy",
+  "confidence_legend": {
+    "high": "材料が単純で、エネルギー・食塩とも公式値とよく一致",
+    "medium": "調整倍率のずれ20%以内かつ食塩差0.5g以内",
+    "low": "調整倍率のずれ40%以内かつ食塩差1.0g以内",
+    "very_low": "上記を満たさない（材料の仮定を見直すべき）"
+  },
+  "items": [
+    {
+      "menu_id": "ライス#1",
+      "name": "ライス",
+      "method": "recipe_calc_kcal_scaled",
+      "confidence": "high",
+      "nutrients": {
+        "protein": {
+          "value": 4.9,
+          "status": "estimated"
+        },
+        "fat": {
+          "value": 0.6,
+          "status": "estimated"
+        },
+        "saturated_fat": {
+          "value": 0.2,
+          "status": "estimated"
+        },
+        "carbohydrate": {
+          "value": 72.1,
+          "status": "estimated"
+        },
+        "dietary_fiber": {
+          "value": 2.9,
+          "status": "estimated"
+        },
+        "cholesterol": {
+          "value": 0,
+          "status": "estimated"
+        }
+      },
+      "checks": {
+        "calories_raw": 312,
+        "calories_official": 303,
+        "kcal_scale": 0.971,
+        "salt_estimated": 0.0,
+        "salt_official": 0,
+        "salt_diff": 0.0
+      },
+      "assumed_ingredients": [
+        {
+          "label": "ごはん",
+          "food_code": "01088",
+          "grams": 200,
+          "grams_scaled": 194.2
+        }
+      ],
+      "recipe_notes": "精白米のごはんのみと仮定。",
+      "inputs_with_mext_estimates": [
+        "ごはん"
+      ]
+    },
+    {
+      "menu_id": "小エビのサラダ",
+      "name": "小エビのサラダ",
+      "method": "recipe_calc_kcal_scaled",
+      "confidence": "medium",
+      "nutrients": {
+        "protein": {
+          "value": 7.4,
+          "status": "estimated"
+        },
+        "fat": {
+          "value": 18.0,
+          "status": "estimated"
+        },
+        "saturated_fat": {
+          "value": 1.4,
+          "status": "estimated"
+        },
+        "carbohydrate": {
+          "value": 3.4,
+          "status": "estimated"
+        },
+        "dietary_fiber": {
+          "value": 0.9,
+          "status": "estimated"
+        },
+        "cholesterol": {
+          "value": 63,
+          "status": "estimated"
+        }
+      },
+      "checks": {
+        "calories_raw": 176,
+        "calories_official": 196,
+        "kcal_scale": 1.115,
+        "salt_estimated": 1.02,
+        "salt_official": 1.4,
+        "salt_diff": 0.38
+      },
+      "assumed_ingredients": [
+        {
+          "label": "レタス",
+          "food_code": "06312",
+          "grams": 50,
+          "grams_scaled": 55.8
+        },
+        {
+          "label": "レッドキャベツ",
+          "food_code": "06064",
+          "grams": 10,
+          "grams_scaled": 11.2
+        },
+        {
+          "label": "小エビ",
+          "food_code": "10415",
+          "grams": 30,
+          "grams_scaled": 33.5
+        },
+        {
+          "label": "ドレッシング（マヨネーズ）",
+          "food_code": "17042",
+          "grams": 15,
+          "grams_scaled": 16.7
+        },
+        {
+          "label": "ドレッシング（なたね油）",
+          "food_code": "14008",
+          "grams": 4.5,
+          "grams_scaled": 5.0
+        },
+        {
+          "label": "ドレッシング（りんご酢）",
+          "food_code": "17018",
+          "grams": 9.6,
+          "grams_scaled": 10.7
+        },
+        {
+          "label": "ドレッシング（食塩）",
+          "food_code": "17012",
+          "grams": 0.54,
+          "grams_scaled": 0.6
+        }
+      ],
+      "recipe_notes": "レタス中心のサラダに小エビとドレッシング30gと仮定。",
+      "inputs_with_mext_estimates": [
+        "ドレッシング（りんご酢）",
+        "ドレッシング（マヨネーズ）",
+        "ドレッシング（食塩）",
+        "レタス",
+        "レッドキャベツ",
+        "小エビ"
+      ]
+    },
+    {
+      "menu_id": "わかめのサラダ",
+      "name": "わかめのサラダ",
+      "method": "recipe_calc_kcal_scaled",
+      "confidence": "medium",
+      "nutrients": {
+        "protein": {
+          "value": 1.1,
+          "status": "estimated"
+        },
+        "fat": {
+          "value": 17.6,
+          "status": "estimated"
+        },
+        "saturated_fat": {
+          "value": 1.4,
+          "status": "estimated"
+        },
+        "carbohydrate": {
+          "value": 4.0,
+          "status": "estimated"
+        },
+        "dietary_fiber": {
+          "value": 2.0,
+          "status": "estimated"
+        },
+        "cholesterol": {
+          "value": 9,
+          "status": "estimated"
+        }
+      },
+      "checks": {
+        "calories_raw": 154,
+        "calories_official": 169,
+        "kcal_scale": 1.097,
+        "salt_estimated": 1.13,
+        "salt_official": 0.9,
+        "salt_diff": 0.23
+      },
+      "assumed_ingredients": [
+        {
+          "label": "レタス",
+          "food_code": "06312",
+          "grams": 50,
+          "grams_scaled": 54.8
+        },
+        {
+          "label": "わかめ（水戻し）",
+          "food_code": "09041",
+          "grams": 30,
+          "grams_scaled": 32.9
+        },
+        {
+          "label": "ドレッシング（マヨネーズ）",
+          "food_code": "17042",
+          "grams": 15,
+          "grams_scaled": 16.4
+        },
+        {
+          "label": "ドレッシング（なたね油）",
+          "food_code": "14008",
+          "grams": 4.5,
+          "grams_scaled": 4.9
+        },
+        {
+          "label": "ドレッシング（りんご酢）",
+          "food_code": "17018",
+          "grams": 9.6,
+          "grams_scaled": 10.5
+        },
+        {
+          "label": "ドレッシング（食塩）",
+          "food_code": "17012",
+          "grams": 0.54,
+          "grams_scaled": 0.6
+        }
+      ],
+      "recipe_notes": "レタスとわかめ（乾燥わかめ水戻し）にドレッシング30gと仮定。",
+      "inputs_with_mext_estimates": [
+        "わかめ（水戻し）",
+        "ドレッシング（りんご酢）",
+        "ドレッシング（マヨネーズ）",
+        "ドレッシング（食塩）",
+        "レタス"
+      ]
+    },
+    {
+      "menu_id": "柔らか青豆の温サラダ",
+      "name": "柔らか青豆の温サラダ",
+      "method": "recipe_calc_kcal_scaled",
+      "confidence": "medium",
+      "nutrients": {
+        "protein": {
+          "value": 15.9,
+          "status": "estimated"
+        },
+        "fat": {
+          "value": 10.6,
+          "status": "estimated"
+        },
+        "saturated_fat": {
+          "value": 3.0,
+          "status": "estimated"
+        },
+        "carbohydrate": {
+          "value": 21.7,
+          "status": "estimated"
+        },
+        "dietary_fiber": {
+          "value": 12.4,
+          "status": "estimated"
+        },
+        "cholesterol": {
+          "value": 195,
+          "status": "estimated"
+        }
+      },
+      "checks": {
+        "calories_raw": 214,
+        "calories_official": 215,
+        "kcal_scale": 1.002,
+        "salt_estimated": 0.84,
+        "salt_official": 0.9,
+        "salt_diff": 0.06
+      },
+      "assumed_ingredients": [
+        {
+          "label": "グリンピース",
+          "food_code": "06374",
+          "grams": 120,
+          "grams_scaled": 120.3
+        },
+        {
+          "label": "温泉卵（ゆで卵で代用）",
+          "food_code": "12005",
+          "grams": 50,
+          "grams_scaled": 50.1
+        },
+        {
+          "label": "粉チーズ（パルメザン）",
+          "food_code": "13038",
+          "grams": 5,
+          "grams_scaled": 5.0
+        },
+        {
+          "label": "オリーブ油",
+          "food_code": "14001",
+          "grams": 3,
+          "grams_scaled": 3.0
+        },
+        {
+          "label": "食塩",
+          "food_code": "17012",
+          "grams": 0.5,
+          "grams_scaled": 0.5
+        }
+      ],
+      "recipe_notes": "青えんどう（冷凍グリンピースをゆでたもの）に温泉卵・粉チーズ・オリーブ油と仮定。公式アレルゲン（卵・乳）と矛盾しない材料のみ。",
+      "inputs_with_mext_estimates": [
+        "グリンピース",
+        "粉チーズ（パルメザン）",
+        "食塩"
+      ]
+    },
+    {
+      "menu_id": "ほうれん草のソテー",
+      "name": "ほうれん草のソテー",
+      "method": "recipe_calc_kcal_scaled",
+      "confidence": "medium",
+      "nutrients": {
+        "protein": {
+          "value": 7.7,
+          "status": "estimated"
+        },
+        "fat": {
+          "value": 18.9,
+          "status": "estimated"
+        },
+        "saturated_fat": {
+          "value": 7.6,
+          "status": "estimated"
+        },
+        "carbohydrate": {
+          "value": 9.2,
+          "status": "estimated"
+        },
+        "dietary_fiber": {
+          "value": 5.0,
+          "status": "estimated"
+        },
+        "cholesterol": {
+          "value": 36,
+          "status": "estimated"
+        }
+      },
+      "checks": {
+        "calories_raw": 206,
+        "calories_official": 223,
+        "kcal_scale": 1.084,
+        "salt_estimated": 1.5,
+        "salt_official": 1.2,
+        "salt_diff": 0.3
+      },
+      "assumed_ingredients": [
+        {
+          "label": "ほうれん草（冷凍）",
+          "food_code": "06269",
+          "grams": 120,
+          "grams_scaled": 130.1
+        },
+        {
+          "label": "ベーコン",
+          "food_code": "11183",
+          "grams": 20,
+          "grams_scaled": 21.7
+        },
+        {
+          "label": "コーン（缶詰）",
+          "food_code": "06180",
+          "grams": 20,
+          "grams_scaled": 21.7
+        },
+        {
+          "label": "有塩バター",
+          "food_code": "14017",
+          "grams": 10,
+          "grams_scaled": 10.8
+        },
+        {
+          "label": "調合油",
+          "food_code": "14006",
+          "grams": 5,
+          "grams_scaled": 5.4
+        },
+        {
+          "label": "固形ブイヨン",
+          "food_code": "17027",
+          "grams": 0.5,
+          "grams_scaled": 0.5
+        }
+      ],
+      "recipe_notes": "冷凍ほうれん草をバターと油でソテーし、ベーコン・コーン・ブイヨンを加えたと仮定（公式アレルゲンの豚肉・鶏肉・ゼラチン・小麦から推測）。",
+      "inputs_with_mext_estimates": [
+        "コーン（缶詰）",
+        "ベーコン",
+        "有塩バター"
+      ]
+    },
+    {
+      "menu_id": "キャロットラぺ",
+      "name": "キャロットラぺ",
+      "method": "recipe_calc_kcal_scaled",
+      "confidence": "medium",
+      "nutrients": {
+        "protein": {
+          "value": 0.7,
+          "status": "estimated"
+        },
+        "fat": {
+          "value": 6.6,
+          "status": "estimated"
+        },
+        "saturated_fat": {
+          "value": 0.9,
+          "status": "estimated"
+        },
+        "carbohydrate": {
+          "value": 8.9,
+          "status": "estimated"
+        },
+        "dietary_fiber": {
+          "value": 2.4,
+          "status": "estimated"
+        },
+        "cholesterol": {
+          "value": 0,
+          "status": "estimated"
+        }
+      },
+      "checks": {
+        "calories_raw": 86,
+        "calories_official": 92,
+        "kcal_scale": 1.071,
+        "salt_estimated": 0.62,
+        "salt_official": 0.6,
+        "salt_diff": 0.02
+      },
+      "assumed_ingredients": [
+        {
+          "label": "にんじん",
+          "food_code": "06214",
+          "grams": 80,
+          "grams_scaled": 85.7
+        },
+        {
+          "label": "オレンジ果汁",
+          "food_code": "07043",
+          "grams": 10,
+          "grams_scaled": 10.7
+        },
+        {
+          "label": "オリーブ油",
+          "food_code": "14001",
+          "grams": 6,
+          "grams_scaled": 6.4
+        },
+        {
+          "label": "りんご酢",
+          "food_code": "17018",
+          "grams": 8,
+          "grams_scaled": 8.6
+        },
+        {
+          "label": "食塩",
+          "food_code": "17012",
+          "grams": 0.5,
+          "grams_scaled": 0.5
+        }
+      ],
+      "recipe_notes": "千切りにんじんをオレンジ果汁・オリーブ油・りんご酢・塩で和えたと仮定。",
+      "inputs_with_mext_estimates": [
+        "にんじん",
+        "りんご酢",
+        "オレンジ果汁",
+        "食塩"
+      ]
+    },
+    {
+      "menu_id": "田舎風ミネストローネ",
+      "name": "田舎風ミネストローネ",
+      "method": "recipe_calc_kcal_scaled",
+      "confidence": "medium",
+      "nutrients": {
+        "protein": {
+          "value": 6.8,
+          "status": "estimated"
+        },
+        "fat": {
+          "value": 9.0,
+          "status": "estimated"
+        },
+        "saturated_fat": {
+          "value": 2.3,
+          "status": "estimated"
+        },
+        "carbohydrate": {
+          "value": 22.4,
+          "status": "estimated"
+        },
+        "dietary_fiber": {
+          "value": 5.7,
+          "status": "estimated"
+        },
+        "cholesterol": {
+          "value": 12,
+          "status": "estimated"
+        }
+      },
+      "checks": {
+        "calories_raw": 192,
+        "calories_official": 183,
+        "kcal_scale": 0.951,
+        "salt_estimated": 2.38,
+        "salt_official": 2.4,
+        "salt_diff": 0.02
+      },
+      "assumed_ingredients": [
+        {
+          "label": "トマト（ホール缶）",
+          "food_code": "06184",
+          "grams": 80,
+          "grams_scaled": 76.1
+        },
+        {
+          "label": "たまねぎ",
+          "food_code": "06153",
+          "grams": 30,
+          "grams_scaled": 28.5
+        },
+        {
+          "label": "キャベツ",
+          "food_code": "06061",
+          "grams": 30,
+          "grams_scaled": 28.5
+        },
+        {
+          "label": "じゃがいも",
+          "food_code": "02017",
+          "grams": 30,
+          "grams_scaled": 28.5
+        },
+        {
+          "label": "にんじん",
+          "food_code": "06214",
+          "grams": 20,
+          "grams_scaled": 19.0
+        },
+        {
+          "label": "セロリ",
+          "food_code": "06119",
+          "grams": 10,
+          "grams_scaled": 9.5
+        },
+        {
+          "label": "ショートパスタ（ゆで）",
+          "food_code": "01064",
+          "grams": 20,
+          "grams_scaled": 19.0
+        },
+        {
+          "label": "ベーコン",
+          "food_code": "11183",
+          "grams": 15,
+          "grams_scaled": 14.3
+        },
+        {
+          "label": "オリーブ油",
+          "food_code": "14001",
+          "grams": 5,
+          "grams_scaled": 4.8
+        },
+        {
+          "label": "粉チーズ（パルメザン）",
+          "food_code": "13038",
+          "grams": 3,
+          "grams_scaled": 2.9
+        },
+        {
+          "label": "固形ブイヨン",
+          "food_code": "17027",
+          "grams": 4,
+          "grams_scaled": 3.8
+        }
+      ],
+      "recipe_notes": "トマトベースの野菜スープにベーコン・パスタ・粉チーズ・ブイヨンと仮定。",
+      "inputs_with_mext_estimates": [
+        "じゃがいも",
+        "にんじん",
+        "キャベツ",
+        "ショートパスタ（ゆで）",
+        "セロリ",
+        "トマト（ホール缶）",
+        "ベーコン",
+        "粉チーズ（パルメザン）"
+      ]
+    },
+    {
+      "menu_id": "ミラノ風ドリア#1",
+      "name": "ミラノ風ドリア",
+      "method": "recipe_calc_kcal_scaled",
+      "confidence": "medium",
+      "nutrients": {
+        "protein": {
+          "value": 13.1,
+          "status": "estimated"
+        },
+        "fat": {
+          "value": 20.8,
+          "status": "estimated"
+        },
+        "saturated_fat": {
+          "value": 7.8,
+          "status": "estimated"
+        },
+        "carbohydrate": {
+          "value": 83.3,
+          "status": "estimated"
+        },
+        "dietary_fiber": {
+          "value": 3.8,
+          "status": "estimated"
+        },
+        "cholesterol": {
+          "value": 36,
+          "status": "estimated"
+        }
+      },
+      "checks": {
+        "calories_raw": 526,
+        "calories_official": 556,
+        "kcal_scale": 1.056,
+        "salt_estimated": 2.5,
+        "salt_official": 2.6,
+        "salt_diff": 0.1
+      },
+      "assumed_ingredients": [
+        {
+          "label": "ごはん",
+          "food_code": "01088",
+          "grams": 180,
+          "grams_scaled": 190.1
+        },
+        {
+          "label": "ホワイトソース",
+          "food_code": "17109",
+          "grams": 100,
+          "grams_scaled": 105.6
+        },
+        {
+          "label": "牛ひき肉",
+          "food_code": "11089",
+          "grams": 20,
+          "grams_scaled": 21.1
+        },
+        {
+          "label": "トマト（ホール缶）",
+          "food_code": "06184",
+          "grams": 20,
+          "grams_scaled": 21.1
+        },
+        {
+          "label": "たまねぎ",
+          "food_code": "06153",
+          "grams": 15,
+          "grams_scaled": 15.8
+        },
+        {
+          "label": "有塩バター",
+          "food_code": "14017",
+          "grams": 5,
+          "grams_scaled": 5.3
+        },
+        {
+          "label": "調合油",
+          "food_code": "14006",
+          "grams": 3,
+          "grams_scaled": 3.2
+        },
+        {
+          "label": "粉チーズ（パルメザン）",
+          "food_code": "13038",
+          "grams": 5,
+          "grams_scaled": 5.3
+        },
+        {
+          "label": "固形ブイヨン",
+          "food_code": "17027",
+          "grams": 1.5,
+          "grams_scaled": 1.6
+        },
+        {
+          "label": "食塩",
+          "food_code": "17012",
+          "grams": 0.4,
+          "grams_scaled": 0.4
+        }
+      ],
+      "recipe_notes": "ごはんにホワイトソースと牛ひき肉のミートソース、粉チーズをのせて焼いたと仮定。ミートソースは成分表の既製品に飽和脂肪酸の値が無いため材料に分解。",
+      "inputs_with_mext_estimates": [
+        "ごはん",
+        "トマト（ホール缶）",
+        "ホワイトソース",
+        "有塩バター",
+        "牛ひき肉",
+        "粉チーズ（パルメザン）",
+        "食塩"
+      ]
+    },
+    {
+      "menu_id": "ペペロンチーノ",
+      "name": "ペペロンチーノ",
+      "method": "recipe_calc_kcal_scaled",
+      "confidence": "medium",
+      "nutrients": {
+        "protein": {
+          "value": 14.8,
+          "status": "estimated"
+        },
+        "fat": {
+          "value": 18.7,
+          "status": "estimated"
+        },
+        "saturated_fat": {
+          "value": 2.7,
+          "status": "estimated"
+        },
+        "carbohydrate": {
+          "value": 83.0,
+          "status": "estimated"
+        },
+        "dietary_fiber": {
+          "value": 6.5,
+          "status": "estimated"
+        },
+        "cholesterol": {
+          "value": 0,
+          "status": "estimated"
+        }
+      },
+      "checks": {
+        "calories_raw": 494,
+        "calories_official": 542,
+        "kcal_scale": 1.098,
+        "salt_estimated": 2.26,
+        "salt_official": 2.3,
+        "salt_diff": 0.04
+      },
+      "assumed_ingredients": [
+        {
+          "label": "スパゲッティ（乾）",
+          "food_code": "01063",
+          "grams": 100,
+          "grams_scaled": 109.8
+        },
+        {
+          "label": "オリーブ油",
+          "food_code": "14001",
+          "grams": 15,
+          "grams_scaled": 16.5
+        },
+        {
+          "label": "にんにく",
+          "food_code": "06223",
+          "grams": 5,
+          "grams_scaled": 5.5
+        },
+        {
+          "label": "唐辛子（乾）",
+          "food_code": "06172",
+          "grams": 0.5,
+          "grams_scaled": 0.5
+        },
+        {
+          "label": "固形ブイヨン",
+          "food_code": "17027",
+          "grams": 2,
+          "grams_scaled": 2.2
+        },
+        {
+          "label": "食塩",
+          "food_code": "17012",
+          "grams": 1.2,
+          "grams_scaled": 1.3
+        }
+      ],
+      "recipe_notes": "乾麺100gをゆで、オリーブ油・にんにく・唐辛子・ブイヨンで和えたと仮定。ゆで汁の塩分は食塩として別に計上。",
+      "inputs_with_mext_estimates": [
+        "にんにく",
+        "スパゲッティ（乾）",
+        "唐辛子（乾）",
+        "食塩"
+      ]
+    },
+    {
+      "menu_id": "ハンバーグステーキ",
+      "name": "ハンバーグステーキ",
+      "method": "recipe_calc_kcal_scaled",
+      "confidence": "medium",
+      "nutrients": {
+        "protein": {
+          "value": 29.0,
+          "status": "estimated"
+        },
+        "fat": {
+          "value": 37.2,
+          "status": "estimated"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_estimable",
+          "missing_in": [
+            "デミグラスソース"
+          ]
+        },
+        "carbohydrate": {
+          "value": 32.4,
+          "status": "estimated"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_estimable",
+          "missing_in": [
+            "デミグラスソース"
+          ]
+        },
+        "cholesterol": {
+          "value": null,
+          "status": "not_estimable",
+          "missing_in": [
+            "デミグラスソース"
+          ]
+        }
+      },
+      "checks": {
+        "calories_raw": 514,
+        "calories_official": 557,
+        "kcal_scale": 1.084,
+        "salt_estimated": 2.07,
+        "salt_official": 2.5,
+        "salt_diff": 0.43
+      },
+      "assumed_ingredients": [
+        {
+          "label": "牛ひき肉",
+          "food_code": "11089",
+          "grams": 80,
+          "grams_scaled": 86.7
+        },
+        {
+          "label": "豚ひき肉",
+          "food_code": "11163",
+          "grams": 40,
+          "grams_scaled": 43.3
+        },
+        {
+          "label": "たまねぎ",
+          "food_code": "06153",
+          "grams": 20,
+          "grams_scaled": 21.7
+        },
+        {
+          "label": "パン粉（乾燥）",
+          "food_code": "01079",
+          "grams": 8,
+          "grams_scaled": 8.7
+        },
+        {
+          "label": "鶏卵",
+          "food_code": "12004",
+          "grams": 10,
+          "grams_scaled": 10.8
+        },
+        {
+          "label": "牛乳",
+          "food_code": "13003",
+          "grams": 10,
+          "grams_scaled": 10.8
+        },
+        {
+          "label": "食塩",
+          "food_code": "17012",
+          "grams": 0.8,
+          "grams_scaled": 0.9
+        },
+        {
+          "label": "調合油",
+          "food_code": "14006",
+          "grams": 3,
+          "grams_scaled": 3.3
+        },
+        {
+          "label": "デミグラスソース",
+          "food_code": "17105",
+          "grams": 50,
+          "grams_scaled": 54.2
+        },
+        {
+          "label": "フライドポテト",
+          "food_code": "02020",
+          "grams": 40,
+          "grams_scaled": 43.3
+        },
+        {
+          "label": "コーン（缶詰）",
+          "food_code": "06180",
+          "grams": 20,
+          "grams_scaled": 21.7
+        }
+      ],
+      "recipe_notes": "牛豚合いびきのハンバーグにデミグラスソース、付け合わせにフライドポテトとコーンと仮定。デミグラスソースは成分表に飽和脂肪酸・食物繊維の値が無い。",
+      "inputs_with_mext_estimates": [
+        "コーン（缶詰）",
+        "パン粉（乾燥）",
+        "フライドポテト",
+        "牛ひき肉",
+        "牛乳",
+        "豚ひき肉",
+        "食塩"
+      ]
+    }
+  ]
+}

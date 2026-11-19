@@ -1,3 +1,5 @@
 # 開発・テスト用（VPSには不要）
 -r requirements.txt
 pytest>=8.0
+# 食品成分表（Excel）からデータを作るときだけ使う
+openpyxl>=3.1

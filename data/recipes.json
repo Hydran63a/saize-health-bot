@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "assumption_policy": "材料と分量は、一般的な調理法と公式アレルゲン表示を手がかりにした仮定です。サイゼリヤの公式レシピではありません。推定値の計算にのみ使用し、公式値としては扱いません。",
+  "notes": {
+    "dressing_30g": "サイゼリヤドレッシング30g分の仮定配合（マヨネーズ15g・なたね油4.5g・りんご酢9.6g・食塩0.54g）。公式値（30gあたり142kcal・食塩0.8g）にほぼ一致し、公式アレルゲン（卵・大豆・りんご）とも矛盾しない配合として設定。"
+  },
+  "recipes": [
+    {
+      "menu_id": "ライス#1",
+      "notes": "精白米のごはんのみと仮定。",
+      "ingredients": [
+        {"label": "ごはん", "food_code": "01088", "grams": 200}
+      ]
+    },
+    {
+      "menu_id": "小エビのサラダ",
+      "notes": "レタス中心のサラダに小エビとドレッシング30gと仮定。",
+      "ingredients": [
+        {"label": "レタス", "food_code": "06312", "grams": 50},
+        {"label": "レッドキャベツ", "food_code": "06064", "grams": 10},
+        {"label": "小エビ", "food_code": "10415", "grams": 30},
+        {"label": "ドレッシング（マヨネーズ）", "food_code": "17042", "grams": 15, "group": "dressing_30g"},
+        {"label": "ドレッシング（なたね油）", "food_code": "14008", "grams": 4.5, "group": "dressing_30g"},
+        {"label": "ドレッシング（りんご酢）", "food_code": "17018", "grams": 9.6, "group": "dressing_30g"},
+        {"label": "ドレッシング（食塩）", "food_code": "17012", "grams": 0.54, "group": "dressing_30g"}
+      ]
+    },
+    {
+      "menu_id": "わかめのサラダ",
+      "notes": "レタスとわかめ（乾燥わかめ水戻し）にドレッシング30gと仮定。",
+      "ingredients": [
+        {"label": "レタス", "food_code": "06312", "grams": 50},
+        {"label": "わかめ（水戻し）", "food_code": "09041", "grams": 30},
+        {"label": "ドレッシング（マヨネーズ）", "food_code": "17042", "grams": 15, "group": "dressing_30g"},
+        {"label": "ドレッシング（なたね油）", "food_code": "14008", "grams": 4.5, "group": "dressing_30g"},
+        {"label": "ドレッシング（りんご酢）", "food_code": "17018", "grams": 9.6, "group": "dressing_30g"},
+        {"label": "ドレッシング（食塩）", "food_code": "17012", "grams": 0.54, "group": "dressing_30g"}
+      ]
+    },
+    {
+      "menu_id": "柔らか青豆の温サラダ",
+      "notes": "青えんどう（冷凍グリンピースをゆでたもの）に温泉卵・粉チーズ・オリーブ油と仮定。公式アレルゲン（卵・乳）と矛盾しない材料のみ。",
+      "ingredients": [
+        {"label": "グリンピース", "food_code": "06374", "grams": 120},
+        {"label": "温泉卵（ゆで卵で代用）", "food_code": "12005", "grams": 50},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 5},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 3},
+        {"label": "食塩", "food_code": "17012", "grams": 0.5}
+      ]
+    },
+    {
+      "menu_id": "ほうれん草のソテー",
+      "notes": "冷凍ほうれん草をバターと油でソテーし、ベーコン・コーン・ブイヨンを加えたと仮定（公式アレルゲンの豚肉・鶏肉・ゼラチン・小麦から推測）。",
+      "ingredients": [
+        {"label": "ほうれん草（冷凍）", "food_code": "06269", "grams": 120},
+        {"label": "ベーコン", "food_code": "11183", "grams": 20},
+        {"label": "コーン（缶詰）", "food_code": "06180", "grams": 20},
+        {"label": "有塩バター", "food_code": "14017", "grams": 10},
+        {"label": "調合油", "food_code": "14006", "grams": 5},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 0.5}
+      ]
+    },
+    {
+      "menu_id": "キャロットラぺ",
+      "notes": "千切りにんじんをオレンジ果汁・オリーブ油・りんご酢・塩で和えたと仮定。",
+      "ingredients": [
+        {"label": "にんじん", "food_code": "06214", "grams": 80},
+        {"label": "オレンジ果汁", "food_code": "07043", "grams": 10},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 6},
+        {"label": "りんご酢", "food_code": "17018", "grams": 8},
+        {"label": "食塩", "food_code": "17012", "grams": 0.5}
+      ]
+    },
+    {
+      "menu_id": "田舎風ミネストローネ",
+      "notes": "トマトベースの野菜スープにベーコン・パスタ・粉チーズ・ブイヨンと仮定。",
+      "ingredients": [
+        {"label": "トマト（ホール缶）", "food_code": "06184", "grams": 80},
+        {"label": "たまねぎ", "food_code": "06153", "grams": 30},
+        {"label": "キャベツ", "food_code": "06061", "grams": 30},
+        {"label": "じゃがいも", "food_code": "02017", "grams": 30},
+        {"label": "にんじん", "food_code": "06214", "grams": 20},
+        {"label": "セロリ", "food_code": "06119", "grams": 10},
+        {"label": "ショートパスタ（ゆで）", "food_code": "01064", "grams": 20},
+        {"label": "ベーコン", "food_code": "11183", "grams": 15},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 5},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 3},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 4}
+      ]
+    },
+    {
+      "menu_id": "ミラノ風ドリア#1",
+      "notes": "ごはんにホワイトソースと牛ひき肉のミートソース、粉チーズをのせて焼いたと仮定。ミートソースは成分表の既製品に飽和脂肪酸の値が無いため材料に分解。",
+      "ingredients": [
+        {"label": "ごはん", "food_code": "01088", "grams": 180},
+        {"label": "ホワイトソース", "food_code": "17109", "grams": 100},
+        {"label": "牛ひき肉", "food_code": "11089", "grams": 20},
+        {"label": "トマト（ホール缶）", "food_code": "06184", "grams": 20},
+        {"label": "たまねぎ", "food_code": "06153", "grams": 15},
+        {"label": "有塩バター", "food_code": "14017", "grams": 5},
+        {"label": "調合油", "food_code": "14006", "grams": 3},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 5},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1.5},
+        {"label": "食塩", "food_code": "17012", "grams": 0.4}
+      ]
+    },
+    {
+      "menu_id": "ペペロンチーノ",
+      "notes": "乾麺100gをゆで、オリーブ油・にんにく・唐辛子・ブイヨンで和えたと仮定。ゆで汁の塩分は食塩として別に計上。",
+      "ingredients": [
+        {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 15},
+        {"label": "にんにく", "food_code": "06223", "grams": 5},
+        {"label": "唐辛子（乾）", "food_code": "06172", "grams": 0.5},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 2},
+        {"label": "食塩", "food_code": "17012", "grams": 1.2}
+      ]
+    },
+    {
+      "menu_id": "ハンバーグステーキ",
+      "notes": "牛豚合いびきのハンバーグにデミグラスソース、付け合わせにフライドポテトとコーンと仮定。デミグラスソースは成分表に飽和脂肪酸・食物繊維の値が無い。",
+      "ingredients": [
+        {"label": "牛ひき肉", "food_code": "11089", "grams": 80},
+        {"label": "豚ひき肉", "food_code": "11163", "grams": 40},
+        {"label": "たまねぎ", "food_code": "06153", "grams": 20},
+        {"label": "パン粉（乾燥）", "food_code": "01079", "grams": 8},
+        {"label": "鶏卵", "food_code": "12004", "grams": 10},
+        {"label": "牛乳", "food_code": "13003", "grams": 10},
+        {"label": "食塩", "food_code": "17012", "grams": 0.8},
+        {"label": "調合油", "food_code": "14006", "grams": 3},
+        {"label": "デミグラスソース", "food_code": "17105", "grams": 50},
+        {"label": "フライドポテト", "food_code": "02020", "grams": 40},
+        {"label": "コーン（缶詰）", "food_code": "06180", "grams": 20}
+      ]
+    }
+  ]
+}
