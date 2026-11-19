@@ -1,0 +1,17 @@
+# Saize Health Bot：毎日 11:00 と 15:00（日本時間）に投稿サービスを起動するタイマー
+# 設置場所：/etc/systemd/system/saize-bot-post.timer
+# .env の POST_TIMES を変えたときは、ここの時刻も同じにすること。
+
+[Unit]
+Description=Saize Health Bot - post at 11:00 and 15:00 (Asia/Tokyo)
+
+[Timer]
+OnCalendar=*-*-* 11:00:00 Asia/Tokyo
+OnCalendar=*-*-* 15:00:00 Asia/Tokyo
+# サーバーが止まっていて時刻を過ぎた分は、あとから実行しない（遅れた「お昼の献立」を出さないため）
+Persistent=false
+AccuracySec=1min
+Unit=saize-bot-post.service
+
+[Install]
+WantedBy=timers.target

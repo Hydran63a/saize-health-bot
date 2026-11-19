@@ -1,0 +1,30 @@
+# Saize Health Bot：おすすめ献立を1回投稿して終わるサービス
+# saize-bot-post.timer から 11:00 / 15:00（日本時間）に起動される。
+# 設置場所：/etc/systemd/system/saize-bot-post.service
+
+[Unit]
+Description=Saize Health Bot - post a meal recommendation to Misskey
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=saizebot
+Group=saizebot
+WorkingDirectory=/opt/saize-health-bot
+ExecStart=/opt/saize-health-bot/.venv/bin/python main.py post --slot auto
+# 失敗時のやり直し（最大10分待つ）はプログラムの中で行う。それより長くかかったら止める
+TimeoutStartSec=20min
+
+# --- 安全のための制限 ---
+# 権限の昇格を禁止し、書き込めるのはログと履歴のフォルダだけにする
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+ReadWritePaths=/opt/saize-health-bot/logs /opt/saize-health-bot/database

@@ -113,5 +113,13 @@ class HistoryStore:
         )
         return {row[0] for row in rows}
 
+    def posted_in_slot_since(self, slot: str, since: datetime) -> bool:
+        """since 以降に、同じ投稿枠（例 "11:00"）の記録があるか。二重投稿の防止に使う。"""
+        row = self.conn.execute(
+            "SELECT 1 FROM recommendation_history WHERE slot = ? AND created_at >= ? LIMIT 1",
+            (slot, _to_utc_text(since)),
+        ).fetchone()
+        return row is not None
+
     def count(self) -> int:
         return self.conn.execute("SELECT COUNT(*) FROM recommendation_history").fetchone()[0]

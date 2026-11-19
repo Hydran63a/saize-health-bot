@@ -70,6 +70,17 @@ def test_old_history_file_gets_new_column(tmp_path):
         assert h.count() == 1
 
 
+def test_posted_in_slot_since():
+    now = datetime(2026, 11, 19, 11, 0, tzinfo=JST)
+    midnight = now.replace(hour=0, minute=0)
+    with HistoryStore(":memory:") as h:
+        h.add(menu_ids=["A"], staple_id="A", pattern="balance", slot="11:00", created_at=now - timedelta(days=1))
+        assert not h.posted_in_slot_since("11:00", midnight)  # 昨日の記録は数えない
+        h.add(menu_ids=["B"], staple_id="B", pattern="balance", slot="11:00", created_at=now)
+        assert h.posted_in_slot_since("11:00", midnight)
+        assert not h.posted_in_slot_since("15:00", midnight)
+
+
 def test_history_persists_in_file(tmp_path):
     path = tmp_path / "sub" / "history.sqlite3"
     now = datetime(2026, 11, 19, tzinfo=JST)

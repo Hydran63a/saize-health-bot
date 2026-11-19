@@ -11,7 +11,7 @@
 - [x] Phase 3：栄養評価機能（`python -m modules.nutrition 料理名 料理名 ...` で確認）
 - [ ] Phase 4：おすすめ生成（バランス献立・重複防止・投稿文は実装済み。`python -m modules.recommendation --slot 11:00` で投稿文を確認、`--simulate 20` で重複防止を確認、`--budget 800` で予算指定。定期投稿は税込1,000円以内が初期値）
 - [ ] Phase 5：Misskey連携（投稿は実装済み。コマンド応答は未実装）
-- [ ] Phase 6：VPS移行
+- [ ] Phase 6：VPS移行（systemd タイマーの設定と手順書は [deploy/README.md](deploy/README.md)。VPS への設置はこれから）
 
 ## セットアップ（Windows 11 / PowerShell）
 
