@@ -16,6 +16,25 @@ BASE_DIR = Path(__file__).resolve().parent
 
 _TRUE_VALUES = {"1", "true", "yes", "on"}
 
+DEFAULT_POST_TIMES = "11:00,15:00"
+DEFAULT_TIMEZONE = "Asia/Tokyo"
+
+
+def parse_post_times(text: str) -> tuple[tuple[int, int], ...]:
+    """'11:00,15:00' → ((11, 0), (15, 0))。重複は除き、時刻順に並べる。"""
+    times: set[tuple[int, int]] = set()
+    for part in filter(None, (p.strip() for p in text.split(","))):
+        hour_text, sep, minute_text = part.partition(":")
+        if not sep or not hour_text.isdigit() or not minute_text.isdigit() or len(minute_text) != 2:
+            raise ValueError(f"POST_TIMES の形式が正しくありません（HH:MM）: {part!r}")
+        hour, minute = int(hour_text), int(minute_text)
+        if not (0 <= hour <= 23 and 0 <= minute <= 59):
+            raise ValueError(f"POST_TIMES の時刻が範囲外です: {part!r}")
+        times.add((hour, minute))
+    if not times:
+        raise ValueError("POST_TIMES に時刻が1つもありません")
+    return tuple(sorted(times))
+
 
 def _get_bool(name: str, default: bool) -> bool:
     value = os.getenv(name)
@@ -44,6 +63,13 @@ class Settings:
     log_level: str
     db_path: Path
     log_dir: Path
+    # おすすめ投稿の時刻（timezone での時刻）。自動投稿は ENABLE_POSTING=true のときのみ
+    post_times: tuple[tuple[int, int], ...]
+    timezone: str
+
+    @property
+    def post_times_text(self) -> str:
+        return ", ".join(f"{h:02d}:{m:02d}" for h, m in self.post_times)
 
     @property
     def has_token(self) -> bool:
@@ -66,4 +92,6 @@ def load_settings(env_file: Path | None = None) -> Settings:
         log_level=os.getenv("LOG_LEVEL", "INFO").strip().upper(),
         db_path=db_path,
         log_dir=BASE_DIR / "logs",
+        post_times=parse_post_times(os.getenv("POST_TIMES") or DEFAULT_POST_TIMES),
+        timezone=(os.getenv("TIMEZONE") or DEFAULT_TIMEZONE).strip(),
     )

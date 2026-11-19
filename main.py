@@ -36,6 +36,7 @@ def check_environment() -> bool:
     print(f"Misskeyホスト: {settings.misskey_host or '未設定'}")
     print(f"トークン    : {'設定済み' if settings.has_token else '未設定'}")  # 値そのものは表示しない
     print(f"投稿        : {'有効' if settings.enable_posting else '無効'}")
+    print(f"投稿時刻    : {settings.post_times_text}（{settings.timezone}）")
     print(f"DBパス      : {settings.db_path}")
 
     print("結果        :", "問題なし" if ok else "要確認")
