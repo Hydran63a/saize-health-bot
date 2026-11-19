@@ -169,6 +169,66 @@ def test_reasons_explain_the_combination_only():
     assert not any("g" in r or "%" in r for r in reasons)
 
 
+# ---------------------------------------------------------------------------
+# 価格・予算
+# ---------------------------------------------------------------------------
+
+
+def price_table(prices: dict[str, int]):
+    from modules.pricing import PriceTable
+
+    return PriceTable({"items": {k: {"price_yen": v, "price_tax_included_yen": v, "tax_rate": 0.10}
+                                 for k, v in prices.items()}})
+
+
+ALL_PRICES = {"パスタA": 500, "パスタB": 300, "ライス": 150, "サラダ": 300, "チキン": 300, "スープ": 150}
+
+
+def test_items_without_price_are_not_recommended():
+    data = make_data()
+    prices = price_table({k: v for k, v in ALL_PRICES.items() if k != "パスタA"})  # パスタA は価格なし
+    with HistoryStore(":memory:") as h:
+        for seed in range(20):
+            rec = rc.recommend(data, h, NOW, combo_days=30, staple_days=3, rng=random.Random(seed), prices=prices)
+            assert "パスタA" not in rec.menu_ids
+            assert rec.total_price_yen is not None
+
+
+def test_budget_limits_total_price():
+    data = make_data()
+    prices = price_table(ALL_PRICES)
+    with HistoryStore(":memory:") as h:
+        for seed in range(20):
+            rec = rc.recommend(data, h, NOW, combo_days=30, staple_days=3, rng=random.Random(seed),
+                               prices=prices, budget_yen=600)
+            assert rec.total_price_yen <= 600
+            assert rec.budget_yen == 600
+
+
+def test_budget_too_low_raises_clear_error():
+    data = make_data()
+    with HistoryStore(":memory:") as h, pytest.raises(rc.BudgetTooLowError):
+        rc.recommend(data, h, NOW, combo_days=30, staple_days=3, prices=price_table(ALL_PRICES), budget_yen=100)
+
+
+def test_budget_without_price_table_is_rejected():
+    with HistoryStore(":memory:") as h, pytest.raises(ValueError):
+        rc.recommend(make_data(), h, NOW, combo_days=30, staple_days=3, budget_yen=1000)
+
+
+def test_real_data_within_1000_yen():
+    from modules.pricing import PriceTable
+
+    data = nu.NutritionData.load()
+    prices = PriceTable.load()
+    with HistoryStore(":memory:") as h:
+        for seed in range(10):
+            rec = rc.recommend(data, h, NOW, combo_days=30, staple_days=3, rng=random.Random(seed),
+                               prices=prices, budget_yen=1000)
+            assert rec.total_price_yen <= 1000
+            assert all(prices.has_price(m) for m in rec.menu_ids)
+
+
 def test_same_seed_gives_same_result():
     data = make_data()
     with HistoryStore(":memory:") as h:

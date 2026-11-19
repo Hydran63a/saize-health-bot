@@ -22,6 +22,7 @@ DEFAULT_TIMEZONE = "Asia/Tokyo"
 DEFAULT_NO_REPEAT_COMBO_DAYS = 30
 DEFAULT_NO_REPEAT_STAPLE_DAYS = 3
 DEFAULT_POST_MAX_CHARS = 500
+DEFAULT_POST_BUDGET_YEN = 1000  # 定期投稿の献立の上限（税込）。0 なら上限なし
 DEFAULT_POST_HASHTAGS = "#unofficial_saize_health_navi"
 
 _HASHTAG = re.compile(r"^#[0-9A-Za-z_぀-ヿ一-鿿]+$")
@@ -97,6 +98,8 @@ class Settings:
     # 投稿文：最大文字数とハッシュタグ
     post_max_chars: int
     post_hashtags: tuple[str, ...]
+    # 定期投稿の献立の予算（税込）。None なら上限なし
+    post_budget_yen: int | None
 
     @property
     def post_times_text(self) -> str:
@@ -129,4 +132,5 @@ def load_settings(env_file: Path | None = None) -> Settings:
         no_repeat_staple_days=_get_non_negative_int("NO_REPEAT_STAPLE_DAYS", DEFAULT_NO_REPEAT_STAPLE_DAYS),
         post_max_chars=_get_non_negative_int("POST_MAX_CHARS", DEFAULT_POST_MAX_CHARS),
         post_hashtags=parse_hashtags(os.getenv("POST_HASHTAGS", DEFAULT_POST_HASHTAGS)),
+        post_budget_yen=_get_non_negative_int("POST_BUDGET_YEN", DEFAULT_POST_BUDGET_YEN) or None,
     )

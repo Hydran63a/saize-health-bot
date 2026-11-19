@@ -27,6 +27,7 @@ from zoneinfo import ZoneInfo
 from config import load_settings
 from database.database import HistoryStore, make_combo_key
 from modules.nutrition import HIGH, MealEvaluation, NutritionData, evaluate_meal
+from modules.pricing import PriceTable
 
 PATTERN_BALANCE = "balance"
 
@@ -53,6 +54,12 @@ class Recommendation:
     evaluation: MealEvaluation
     reasons: list[str]
     relaxed_rules: list[str] = field(default_factory=list)  # 候補不足で緩めたルール
+    total_price_yen: int | None = None  # 税込の合計（価格表を使ったときだけ）
+    budget_yen: int | None = None  # 予算の上限（指定したときだけ）
+
+
+class BudgetTooLowError(ValueError):
+    """予算以内の組み合わせが1つも無いとき。"""
 
 
 @dataclass
@@ -70,11 +77,14 @@ class Slots:
 # ---------------------------------------------------------------------------
 
 
-def classify(data: NutritionData) -> Slots:
+def classify(data: NutritionData, available: set[str] | None = None) -> Slots:
+    """料理を献立の枠に分ける。available を渡すと、その中の料理だけを使う。"""
     staples, salads, mains, soups = [], [], [], []
     for menu_id, tags in data.tags.items():
         if "デザート" in tags:
             continue
+        if available is not None and menu_id not in available:
+            continue  # 例：価格表に無い（今のグランドメニューに載っていない）料理
         if "主食" in tags:
             staples.append(menu_id)
         elif "副菜" in tags and any(t in tags for t in SALAD_CONTENT_TAGS):
@@ -191,11 +201,27 @@ def recommend(
     combo_days: int,
     staple_days: int,
     rng: random.Random | None = None,
+    prices: PriceTable | None = None,
+    budget_yen: int | None = None,
 ) -> Recommendation:
-    rng = rng or random.Random()
-    slots = classify(data)
+    """おすすめを1つ選ぶ。
 
-    evaluated = [(c, evaluate_meal(data, c)) for c in build_candidates(data, slots)]
+    prices を渡すと、価格表に載っている（＝今のグランドメニューにある）料理だけを使う。
+    budget_yen を渡すと、税込合計がその金額以内の組み合わせだけから選ぶ。
+    """
+    rng = rng or random.Random()
+    if budget_yen is not None and prices is None:
+        raise ValueError("予算で絞り込むには価格表（prices）が必要です")
+    slots = classify(data, available=set(prices.items) if prices else None)
+    candidates = build_candidates(data, slots)
+
+    # 予算での絞り込みは、栄養の評価より先に行う（評価する数が減って速くなる）
+    if budget_yen is not None:
+        candidates = [c for c in candidates if prices.total(c).tax_included_yen <= budget_yen]
+        if not candidates:
+            raise BudgetTooLowError(f"税込{budget_yen}円以内の組み合わせがありません")
+
+    evaluated = [(c, evaluate_meal(data, c)) for c in candidates]
     if not evaluated:
         raise ValueError("献立の型に合う組み合わせがありません（タグを確認してください）")
 
@@ -217,6 +243,8 @@ def recommend(
         evaluation=ev,
         reasons=build_reasons(data, combo),
         relaxed_rules=relaxed,
+        total_price_yen=prices.total(combo).tax_included_yen if prices else None,
+        budget_yen=budget_yen,
     )
 
 
@@ -235,31 +263,50 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--record", action="store_true", help="提案を履歴に記録する")
     parser.add_argument("--simulate", type=int, default=0, help="使い捨ての履歴で N 回連続提案する")
     parser.add_argument("--seed", type=int, default=None, help="乱数の種（同じ結果を再現したいとき）")
+    parser.add_argument("--budget", type=int, default=None,
+                        help="予算（税込・円）。省略時は .env の POST_BUDGET_YEN、0 で上限なし")
     args = parser.parse_args(argv)
 
     settings = load_settings()
     data = NutritionData.load()
+    prices = PriceTable.load()
     rng = random.Random(args.seed)
     now = datetime.now(ZoneInfo(settings.timezone))
-    kwargs = {"combo_days": settings.no_repeat_combo_days, "staple_days": settings.no_repeat_staple_days, "rng": rng}
+    budget = settings.post_budget_yen if args.budget is None else (args.budget or None)
+    kwargs = {
+        "combo_days": settings.no_repeat_combo_days,
+        "staple_days": settings.no_repeat_staple_days,
+        "rng": rng,
+        "prices": prices,
+        "budget_yen": budget,
+    }
 
-    if args.simulate:
-        # 本物の履歴を汚さないよう、メモリ上の履歴で「半日ごとに1回」（≒1日2回）投稿した想定で試す
-        with HistoryStore(":memory:") as history:
-            for i in range(args.simulate):
-                moment = now + timedelta(hours=12 * i)
-                rec = recommend(data, history, moment, **kwargs)
-                record(history, rec, moment, slot=None)
-                note = f" （{'／'.join(rec.relaxed_rules)}）" if rec.relaxed_rules else ""
-                print(f"{i + 1:>2}回目: {' ＋ '.join(rec.names)}{note}")
-        return 0
+    try:
+        if args.simulate:
+            # 本物の履歴を汚さないよう、メモリ上の履歴で「半日ごとに1回」（≒1日2回）投稿した想定で試す
+            with HistoryStore(":memory:") as history:
+                for i in range(args.simulate):
+                    moment = now + timedelta(hours=12 * i)
+                    rec = recommend(data, history, moment, **kwargs)
+                    record(history, rec, moment, slot=None)
+                    note = f" （{'／'.join(rec.relaxed_rules)}）" if rec.relaxed_rules else ""
+                    print(f"{i + 1:>2}回目: {' ＋ '.join(rec.names)}  {rec.total_price_yen}円{note}")
+            return 0
+    except BudgetTooLowError as exc:
+        print(f"エラー: {exc}", file=sys.stderr)
+        return 1
 
     slot = parse_post_times(args.slot)[0] if args.slot else None
     # 記録しないときに履歴ファイルがまだ無ければ、空のファイルを作らないようメモリ上で済ませる
     db_path = settings.db_path if (args.record or settings.db_path.exists()) else ":memory:"
     with HistoryStore(db_path) as history:
-        rec = recommend(data, history, now, **kwargs)
-        text = build_post_text(rec, data, slot=slot, max_chars=settings.post_max_chars, hashtags=settings.post_hashtags)
+        try:
+            rec = recommend(data, history, now, **kwargs)
+        except BudgetTooLowError as exc:
+            print(f"エラー: {exc}", file=sys.stderr)
+            return 1
+        text = build_post_text(rec, data, slot=slot, max_chars=settings.post_max_chars,
+                               hashtags=settings.post_hashtags, prices=prices)
         print(text)
         print(f"\n（{len(text)}文字）")
         for note in rec.relaxed_rules:

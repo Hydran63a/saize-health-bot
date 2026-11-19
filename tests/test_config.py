@@ -8,7 +8,8 @@ import config
 @pytest.fixture
 def clean_env(monkeypatch):
     for name in ("MISSKEY_HOST", "MISSKEY_TOKEN", "ENABLE_POSTING", "HTTP_TIMEOUT", "LOG_LEVEL", "DB_PATH", "POST_TIMES", "TIMEZONE",
-                 "NO_REPEAT_COMBO_DAYS", "NO_REPEAT_STAPLE_DAYS", "POST_MAX_CHARS", "POST_HASHTAGS"):
+                 "NO_REPEAT_COMBO_DAYS", "NO_REPEAT_STAPLE_DAYS", "POST_MAX_CHARS", "POST_HASHTAGS",
+                 "POST_BUDGET_YEN"):
         monkeypatch.delenv(name, raising=False)
     return monkeypatch
 
@@ -87,6 +88,12 @@ def test_hashtags_parsing():
 def test_empty_hashtags_env_means_no_tags(clean_env, tmp_path):
     clean_env.setenv("POST_HASHTAGS", "")
     assert config.load_settings(env_file=tmp_path / "missing.env").post_hashtags == ()
+
+
+def test_post_budget_default_and_zero_means_no_limit(clean_env, tmp_path):
+    assert config.load_settings(env_file=tmp_path / "missing.env").post_budget_yen == 1000
+    clean_env.setenv("POST_BUDGET_YEN", "0")
+    assert config.load_settings(env_file=tmp_path / "missing.env").post_budget_yen is None
 
 
 def test_env_example_has_no_real_secrets():

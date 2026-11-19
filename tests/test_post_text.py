@@ -119,12 +119,36 @@ def test_too_long_raises():
         build(make_data(), ["パスタ", "サラダ"], max_chars=50)
 
 
+def test_price_line_and_menu_book_source():
+    from modules.pricing import PriceTable
+
+    data = make_data()
+    prices = PriceTable({"source": {"checked_at": "2099-02-02"},
+                         "items": {"パスタ": {"price_tax_included_yen": 320}, "サラダ": {"price_tax_included_yen": 1060}}})
+    rec = make_rec(data, ["パスタ", "サラダ"])
+    rec.total_price_yen = prices.total(rec.menu_ids).tax_included_yen
+    text = pt.build_post_text(rec, data, slot=(11, 0), max_chars=1000, prices=prices)
+    assert "💴 合計 1,380円（税込・標準価格）" in text  # 3桁ごとのカンマ
+    assert "メニューブック（2099-02-02確認）" in text
+
+
+def test_no_price_line_without_total():
+    text = build(make_data(), ["パスタ", "サラダ"])
+    assert "💴" not in text
+    assert "メニューブック" not in text
+
+
 def test_real_data_posts_fit_in_500_chars():
-    """本物のデータで何回提案しても、500文字に収まる。"""
+    """本物のデータ（価格・予算あり）で何回提案しても、500文字に収まる。"""
+    from modules.pricing import PriceTable
+
     data = nu.NutritionData.load()
+    prices = PriceTable.load()
     with HistoryStore(":memory:") as h:
         for seed in range(30):
-            rec = rc.recommend(data, h, NOW, combo_days=30, staple_days=3, rng=random.Random(seed))
-            text = pt.build_post_text(rec, data, slot=(11, 0), max_chars=500, hashtags=("#unofficial_saize_health_navi",))
+            rec = rc.recommend(data, h, NOW, combo_days=30, staple_days=3, rng=random.Random(seed),
+                               prices=prices, budget_yen=1000)
+            text = pt.build_post_text(rec, data, slot=(11, 0), max_chars=500,
+                                      hashtags=("#unofficial_saize_health_navi",), prices=prices)
             assert len(text) <= 500
-            assert "［公式］" in text
+            assert "［公式］" in text and "💴 合計" in text

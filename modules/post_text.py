@@ -12,6 +12,7 @@
 from __future__ import annotations
 
 from modules.nutrition import HIGH, NOT_EVALUATED, SLIGHTLY_HIGH, ENOUGH, NutritionData
+from modules.pricing import PriceTable
 from modules.recommendation import Recommendation
 
 SLOT_HEADINGS = {
@@ -79,23 +80,22 @@ def choose_tip(rec: Recommendation, data: NutritionData) -> str:
     return "野菜から先に食べると、満足感が出やすくなります。"
 
 
-def source_line(data: NutritionData, used_estimate: bool) -> str:
+def source_line(data: NutritionData, used_estimate: bool, prices: PriceTable | None = None) -> str:
     updated = data.source.get("official_updated_at")
-    official = "サイゼリヤ公式 カロリー塩分情報" + (f"（{updated}更新）" if updated else "")
-    return "出典：" + official + (f"／{MEXT_CITATION}" if used_estimate else "")
+    parts = ["サイゼリヤ公式 カロリー塩分情報" + (f"（{updated}更新）" if updated else "")]
+    if prices is not None:
+        checked = prices.source.get("checked_at")
+        parts[0] += "・メニューブック" + (f"（{checked}確認）" if checked else "")
+    if used_estimate:
+        parts.append(MEXT_CITATION)
+    return "出典：" + "／".join(parts)
 
 
-def _assemble(heading, items, points, nutrition, tip, footer) -> str:
-    blocks = [
-        heading,
-        "\n".join(f"・{name}" for name in items),
-        "✅ ここがポイント\n" + "\n".join(f"・{p}" for p in points),
-        "📊 1食分のめやす\n" + "\n".join(nutrition),
-    ]
-    if tip:
-        blocks.append(f"💡 {tip}")
-    blocks.append(footer)
-    return "\n\n".join(blocks)
+def price_line(rec: Recommendation) -> str | None:
+    """合計金額の行。価格が分からない料理を含むときは出さない。"""
+    if rec.total_price_yen is None:
+        return None
+    return f"💴 合計 {rec.total_price_yen:,}円（税込・標準価格）※店舗により異なる場合があります"
 
 
 def build_post_text(
@@ -105,26 +105,40 @@ def build_post_text(
     slot: tuple[int, int] | None,
     max_chars: int,
     hashtags: tuple[str, ...] = (),
+    prices: PriceTable | None = None,
 ) -> str:
     nutrition, used_estimate = nutrition_lines(rec)
+    price = price_line(rec)
     disclaimer = DISCLAIMER + (ESTIMATE_NOTE if used_estimate else "")
-    footer_lines = [disclaimer, source_line(data, used_estimate)]
+    footer_lines = [disclaimer, source_line(data, used_estimate, prices if price else None)]
     if hashtags:
         footer_lines.append(" ".join(hashtags))
     footer = "\n".join(footer_lines)
 
     heading = heading_for(slot)
-    points = list(rec.reasons)
-    tip: str | None = choose_tip(rec, data)
 
-    # 長すぎるときは、削ってよい部分から順に削る
-    text = _assemble(heading, rec.names, points, nutrition, tip, footer)
+    def assemble(points: list[str], tip: str | None) -> str:
+        blocks = [
+            heading,
+            "\n".join(f"・{name}" for name in rec.names),
+            "✅ ここがポイント\n" + "\n".join(f"・{p}" for p in points),
+            "📊 1食分のめやす\n" + "\n".join(nutrition),
+        ]
+        if price:
+            blocks.append(price)
+        if tip:
+            blocks.append(f"💡 {tip}")
+        blocks.append(footer)
+        return "\n\n".join(blocks)
+
+    # 長すぎるときは、削ってよい部分から順に削る（ひとこと → ポイントの3つ目以降）
+    points = list(rec.reasons)
+    tip = choose_tip(rec, data)
+    text = assemble(points, tip)
     if len(text) > max_chars:
-        tip = None
-        text = _assemble(heading, rec.names, points, nutrition, tip, footer)
+        text = assemble(points, None)
     if len(text) > max_chars:
-        points = points[:KEEP_POINTS_WHEN_SHORTENING]
-        text = _assemble(heading, rec.names, points, nutrition, tip, footer)
+        text = assemble(points[:KEEP_POINTS_WHEN_SHORTENING], None)
     if len(text) > max_chars:
         raise PostTooLongError(f"投稿文が {len(text)} 文字で、上限 {max_chars} 文字に収まりません")
     return text
