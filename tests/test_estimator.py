@@ -36,7 +36,7 @@ def menu_item(kcal, salt):
 
 
 def test_scaling_matches_official_kcal():
-    recipe = {"menu_id": "x", "ingredients": [{"label": "A", "food_code": "A", "grams": 100}]}
+    recipe = {"menu_id": "x", "process": "blind", "ingredients": [{"label": "A", "food_code": "A", "grams": 100}]}
     r = est.estimate_recipe(recipe, menu_item(120, 1.2), FOODS)
     assert r["checks"]["kcal_scale"] == 1.2
     assert r["nutrients"]["saturated_fat"] == {"value": 2.4, "status": "estimated"}
@@ -45,7 +45,7 @@ def test_scaling_matches_official_kcal():
 
 
 def test_zero_fat_food_counts_as_zero_saturated_fat():
-    recipe = {"menu_id": "x", "ingredients": [
+    recipe = {"menu_id": "x", "process": "blind", "ingredients": [
         {"label": "A", "food_code": "A", "grams": 100},
         {"label": "塩", "food_code": "SALT", "grams": 1},
     ]}
@@ -54,7 +54,7 @@ def test_zero_fat_food_counts_as_zero_saturated_fat():
 
 
 def test_missing_value_makes_nutrient_not_estimable():
-    recipe = {"menu_id": "x", "ingredients": [
+    recipe = {"menu_id": "x", "process": "blind", "ingredients": [
         {"label": "A", "food_code": "A", "grams": 100},
         {"label": "ソース", "food_code": "SAUCE", "grams": 50},
     ]}
@@ -95,6 +95,20 @@ def test_unknown_menu_id_is_rejected():
     doc = {"assumption_policy": "", "recipes": [{"menu_id": "存在しない", "ingredients": []}]}
     menu = {"source": {"url": ""}, "items": []}
     with pytest.raises(KeyError):
+        est.build_estimates(doc, menu, FOODS)
+
+
+@pytest.mark.parametrize("process,independent", [("blind", True), ("revised", False), ("tuned_to_official", False)])
+def test_checks_independent_only_for_blind(process, independent):
+    recipe = {"menu_id": "x", "process": process, "ingredients": [{"label": "A", "food_code": "A", "grams": 100}]}
+    assert est.estimate_recipe(recipe, menu_item(100, 1.0), FOODS)["checks_independent"] is independent
+
+
+def test_recipe_without_known_process_is_rejected():
+    doc = {"assumption_policy": "", "process_legend": {"blind": ""},
+           "recipes": [{"menu_id": "m", "ingredients": [{"label": "A", "food_code": "A", "grams": 1}]}]}
+    menu = {"source": {"url": ""}, "items": [{"id": "m", **menu_item(100, 1.0)}]}
+    with pytest.raises(ValueError, match="process"):
         est.build_estimates(doc, menu, FOODS)
 
 

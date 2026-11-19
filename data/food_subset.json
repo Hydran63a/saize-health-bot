@@ -3,6 +3,100 @@
   "source_url": "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html",
   "unit": "可食部100gあたり（cholesterol は mg、それ以外は g / kcal）",
   "foods": {
+    "01015": {
+      "code": "01015",
+      "name": "こむぎ ［小麦粉］ 薄力粉 1等",
+      "per_100g": {
+        "calories": {
+          "value": 349.0
+        },
+        "protein": {
+          "value": 8.3
+        },
+        "fat": {
+          "value": 1.5
+        },
+        "carbohydrate": {
+          "value": 75.8
+        },
+        "dietary_fiber": {
+          "value": 2.5
+        },
+        "salt": {
+          "value": 0.0
+        },
+        "cholesterol": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "saturated_fat": {
+          "value": 0.34
+        }
+      }
+    },
+    "01020": {
+      "code": "01020",
+      "name": "こむぎ ［小麦粉］ 強力粉 1等",
+      "per_100g": {
+        "calories": {
+          "value": 337.0
+        },
+        "protein": {
+          "value": 11.8
+        },
+        "fat": {
+          "value": 1.5
+        },
+        "carbohydrate": {
+          "value": 71.7
+        },
+        "dietary_fiber": {
+          "value": 2.7
+        },
+        "salt": {
+          "value": 0.0
+        },
+        "cholesterol": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "saturated_fat": {
+          "value": 0.35
+        }
+      }
+    },
+    "01031": {
+      "code": "01031",
+      "name": "こむぎ ［パン類］ フランスパン",
+      "per_100g": {
+        "calories": {
+          "value": 289.0
+        },
+        "protein": {
+          "value": 9.4
+        },
+        "fat": {
+          "value": 1.3
+        },
+        "carbohydrate": {
+          "value": 57.5
+        },
+        "dietary_fiber": {
+          "value": 2.7
+        },
+        "salt": {
+          "value": 1.6
+        },
+        "cholesterol": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "saturated_fat": {
+          "value": 0.29,
+          "mext_estimated": true
+        }
+      }
+    },
     "01063": {
       "code": "01063",
       "name": "こむぎ ［マカロニ・スパゲッティ類］ マカロニ・スパゲッティ 乾",
@@ -191,6 +285,41 @@
         }
       }
     },
+    "03003": {
+      "code": "03003",
+      "name": "（砂糖類） 車糖 上白糖",
+      "per_100g": {
+        "calories": {
+          "value": 391.0
+        },
+        "protein": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "fat": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "carbohydrate": {
+          "value": 99.3
+        },
+        "dietary_fiber": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "salt": {
+          "value": 0.0
+        },
+        "cholesterol": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "saturated_fat": {
+          "value": null,
+          "not_in_fatty_acid_table": true
+        }
+      }
+    },
     "06061": {
       "code": "06061",
       "name": "（キャベツ類） キャベツ 結球葉 生",
@@ -250,6 +379,38 @@
         },
         "saturated_fat": {
           "value": 0.01
+        }
+      }
+    },
+    "06103": {
+      "code": "06103",
+      "name": "（しょうが類） しょうが 根茎 皮なし 生",
+      "per_100g": {
+        "calories": {
+          "value": 28.0
+        },
+        "protein": {
+          "value": 0.9
+        },
+        "fat": {
+          "value": 0.3
+        },
+        "carbohydrate": {
+          "value": 6.6
+        },
+        "dietary_fiber": {
+          "value": 2.1
+        },
+        "salt": {
+          "value": 0.0
+        },
+        "cholesterol": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "saturated_fat": {
+          "value": 0.08,
+          "mext_estimated": true
         }
       }
     },
@@ -342,6 +503,38 @@
         },
         "saturated_fat": {
           "value": 1.37,
+          "mext_estimated": true
+        }
+      }
+    },
+    "06179": {
+      "code": "06179",
+      "name": "（とうもろこし類） スイートコーン 缶詰 クリームスタイル",
+      "per_100g": {
+        "calories": {
+          "value": 82.0
+        },
+        "protein": {
+          "value": 1.7
+        },
+        "fat": {
+          "value": 0.5
+        },
+        "carbohydrate": {
+          "value": 18.6
+        },
+        "dietary_fiber": {
+          "value": 1.8
+        },
+        "salt": {
+          "value": 0.7
+        },
+        "cholesterol": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "saturated_fat": {
+          "value": 0.08,
           "mext_estimated": true
         }
       }
@@ -472,6 +665,68 @@
         }
       }
     },
+    "06226": {
+      "code": "06226",
+      "name": "（ねぎ類） 根深ねぎ 葉 軟白 生",
+      "per_100g": {
+        "calories": {
+          "value": 35.0
+        },
+        "protein": {
+          "value": 1.4
+        },
+        "fat": {
+          "value": 0.1
+        },
+        "carbohydrate": {
+          "value": 8.3
+        },
+        "dietary_fiber": {
+          "value": 2.5
+        },
+        "salt": {
+          "value": 0.0
+        },
+        "cholesterol": {
+          "value": 2.0
+        },
+        "saturated_fat": {
+          "value": 0.02
+        }
+      }
+    },
+    "06239": {
+      "code": "06239",
+      "name": "パセリ 葉 生",
+      "per_100g": {
+        "calories": {
+          "value": 34.0
+        },
+        "protein": {
+          "value": 4.0
+        },
+        "fat": {
+          "value": 0.7
+        },
+        "carbohydrate": {
+          "value": 7.8
+        },
+        "dietary_fiber": {
+          "value": 6.8
+        },
+        "salt": {
+          "value": 0.0
+        },
+        "cholesterol": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "saturated_fat": {
+          "value": 0.12,
+          "mext_estimated": true
+        }
+      }
+    },
     "06269": {
       "code": "06269",
       "name": "ほうれんそう 葉 冷凍",
@@ -530,6 +785,39 @@
         },
         "saturated_fat": {
           "value": 0.01
+        }
+      }
+    },
+    "06336": {
+      "code": "06336",
+      "name": "（たまねぎ類） たまねぎ りん茎 油いため",
+      "per_100g": {
+        "calories": {
+          "value": 100.0
+        },
+        "protein": {
+          "value": 1.4
+        },
+        "fat": {
+          "value": 5.9
+        },
+        "carbohydrate": {
+          "value": 12.0
+        },
+        "dietary_fiber": {
+          "value": 2.7
+        },
+        "salt": {
+          "value": 0.0
+        },
+        "cholesterol": {
+          "value": 0.0,
+          "trace": true,
+          "mext_estimated": true
+        },
+        "saturated_fat": {
+          "value": 0.42,
+          "mext_estimated": true
         }
       }
     },
@@ -595,6 +883,38 @@
         }
       }
     },
+    "07156": {
+      "code": "07156",
+      "name": "（かんきつ類） レモン 果汁 生",
+      "per_100g": {
+        "calories": {
+          "value": 24.0
+        },
+        "protein": {
+          "value": 0.4
+        },
+        "fat": {
+          "value": 0.2
+        },
+        "carbohydrate": {
+          "value": 8.6
+        },
+        "dietary_fiber": {
+          "value": 0.0,
+          "trace": true
+        },
+        "salt": {
+          "value": 0.0
+        },
+        "cholesterol": {
+          "value": 0.0
+        },
+        "saturated_fat": {
+          "value": 0.02,
+          "mext_estimated": true
+        }
+      }
+    },
     "09041": {
       "code": "09041",
       "name": "わかめ 乾燥わかめ 素干し 水戻し",
@@ -623,6 +943,37 @@
         "saturated_fat": {
           "value": 0.02,
           "mext_estimated": true
+        }
+      }
+    },
+    "10291": {
+      "code": "10291",
+      "name": "＜貝類＞ エスカルゴ 水煮缶詰",
+      "per_100g": {
+        "calories": {
+          "value": 75.0
+        },
+        "protein": {
+          "value": 16.5
+        },
+        "fat": {
+          "value": 1.0
+        },
+        "carbohydrate": {
+          "value": 0.8
+        },
+        "dietary_fiber": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "salt": {
+          "value": 0.7
+        },
+        "cholesterol": {
+          "value": 240.0
+        },
+        "saturated_fat": {
+          "value": 0.07
         }
       }
     },
@@ -719,6 +1070,37 @@
         }
       }
     },
+    "11181": {
+      "code": "11181",
+      "name": "＜畜肉類＞ ぶた ［ハム類］ 生ハム 促成",
+      "per_100g": {
+        "calories": {
+          "value": 243.0
+        },
+        "protein": {
+          "value": 24.0
+        },
+        "fat": {
+          "value": 16.6
+        },
+        "carbohydrate": {
+          "value": 0.5
+        },
+        "dietary_fiber": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "salt": {
+          "value": 5.8
+        },
+        "cholesterol": {
+          "value": 78.0
+        },
+        "saturated_fat": {
+          "value": 6.47
+        }
+      }
+    },
     "11183": {
       "code": "11183",
       "name": "＜畜肉類＞ ぶた ［ベーコン類］ ばらベーコン ばらベーコン",
@@ -747,6 +1129,130 @@
         },
         "saturated_fat": {
           "value": 6.94
+        }
+      }
+    },
+    "11220": {
+      "code": "11220",
+      "name": "＜鳥肉類＞ にわとり ［若どり・主品目］ むね 皮なし 生",
+      "per_100g": {
+        "calories": {
+          "value": 105.0
+        },
+        "protein": {
+          "value": 23.3
+        },
+        "fat": {
+          "value": 1.9
+        },
+        "carbohydrate": {
+          "value": 0.1
+        },
+        "dietary_fiber": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "salt": {
+          "value": 0.1
+        },
+        "cholesterol": {
+          "value": 72.0
+        },
+        "saturated_fat": {
+          "value": 0.45
+        }
+      }
+    },
+    "11222": {
+      "code": "11222",
+      "name": "＜鳥肉類＞ にわとり ［若どり・主品目］ もも 皮つき 焼き",
+      "per_100g": {
+        "calories": {
+          "value": 220.0
+        },
+        "protein": {
+          "value": 26.3
+        },
+        "fat": {
+          "value": 13.9
+        },
+        "carbohydrate": {
+          "value": 0.0
+        },
+        "dietary_fiber": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "salt": {
+          "value": 0.2
+        },
+        "cholesterol": {
+          "value": 130.0
+        },
+        "saturated_fat": {
+          "value": 4.02
+        }
+      }
+    },
+    "11283": {
+      "code": "11283",
+      "name": "＜畜肉類＞ めんよう ［ラム］ もも 脂身つき 焼き",
+      "per_100g": {
+        "calories": {
+          "value": 267.0
+        },
+        "protein": {
+          "value": 28.6
+        },
+        "fat": {
+          "value": 20.3
+        },
+        "carbohydrate": {
+          "value": 0.3
+        },
+        "dietary_fiber": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "salt": {
+          "value": 0.2
+        },
+        "cholesterol": {
+          "value": 99.0
+        },
+        "saturated_fat": {
+          "value": 9.19
+        }
+      }
+    },
+    "11285": {
+      "code": "11285",
+      "name": "＜鳥肉類＞ にわとり ［若どり・主品目］ 手羽さき 皮つき 生",
+      "per_100g": {
+        "calories": {
+          "value": 207.0
+        },
+        "protein": {
+          "value": 17.4
+        },
+        "fat": {
+          "value": 16.2
+        },
+        "carbohydrate": {
+          "value": 0.0
+        },
+        "dietary_fiber": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "salt": {
+          "value": 0.2
+        },
+        "cholesterol": {
+          "value": 120.0
+        },
+        "saturated_fat": {
+          "value": 4.4
         }
       }
     },
@@ -810,6 +1316,36 @@
         }
       }
     },
+    "12010": {
+      "code": "12010",
+      "name": "鶏卵 卵黄 生",
+      "per_100g": {
+        "calories": {
+          "value": 336.0
+        },
+        "protein": {
+          "value": 16.5
+        },
+        "fat": {
+          "value": 34.3
+        },
+        "carbohydrate": {
+          "value": 0.2
+        },
+        "dietary_fiber": {
+          "value": 0.0
+        },
+        "salt": {
+          "value": 0.1
+        },
+        "cholesterol": {
+          "value": 1200.0
+        },
+        "saturated_fat": {
+          "value": 9.39
+        }
+      }
+    },
     "13003": {
       "code": "13003",
       "name": "＜牛乳及び乳製品＞ （液状乳類） 普通牛乳",
@@ -838,6 +1374,36 @@
         },
         "saturated_fat": {
           "value": 2.33
+        }
+      }
+    },
+    "13014": {
+      "code": "13014",
+      "name": "＜牛乳及び乳製品＞ （クリーム類） クリーム 乳脂肪",
+      "per_100g": {
+        "calories": {
+          "value": 404.0
+        },
+        "protein": {
+          "value": 1.9
+        },
+        "fat": {
+          "value": 43.0
+        },
+        "carbohydrate": {
+          "value": 6.5
+        },
+        "dietary_fiber": {
+          "value": 0.0
+        },
+        "salt": {
+          "value": 0.1
+        },
+        "cholesterol": {
+          "value": 64.0
+        },
+        "saturated_fat": {
+          "value": 26.28
         }
       }
     },
@@ -899,6 +1465,36 @@
         },
         "saturated_fat": {
           "value": 13.29
+        }
+      }
+    },
+    "14002": {
+      "code": "14002",
+      "name": "（植物油脂類） ごま油",
+      "per_100g": {
+        "calories": {
+          "value": 890.0
+        },
+        "protein": {
+          "value": 0.0
+        },
+        "fat": {
+          "value": 100.0
+        },
+        "carbohydrate": {
+          "value": 0.0
+        },
+        "dietary_fiber": {
+          "value": 0.0
+        },
+        "salt": {
+          "value": 0.0
+        },
+        "cholesterol": {
+          "value": 0.0
+        },
+        "saturated_fat": {
+          "value": 15.04
         }
       }
     },
@@ -990,6 +1586,71 @@
         },
         "saturated_fat": {
           "value": 50.45
+        }
+      }
+    },
+    "14020": {
+      "code": "14020",
+      "name": "（マーガリン類） マーガリン 家庭用 有塩",
+      "per_100g": {
+        "calories": {
+          "value": 715.0
+        },
+        "protein": {
+          "value": 0.4
+        },
+        "fat": {
+          "value": 83.1
+        },
+        "carbohydrate": {
+          "value": 0.5
+        },
+        "dietary_fiber": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "salt": {
+          "value": 1.3
+        },
+        "cholesterol": {
+          "value": 5.0
+        },
+        "saturated_fat": {
+          "value": 23.04
+        }
+      }
+    },
+    "17007": {
+      "code": "17007",
+      "name": "＜調味料類＞ （しょうゆ類） こいくちしょうゆ",
+      "per_100g": {
+        "calories": {
+          "value": 76.0
+        },
+        "protein": {
+          "value": 7.7
+        },
+        "fat": {
+          "value": 0.0
+        },
+        "carbohydrate": {
+          "value": 7.9
+        },
+        "dietary_fiber": {
+          "value": 0.0,
+          "trace": true,
+          "mext_estimated": true
+        },
+        "salt": {
+          "value": 14.5
+        },
+        "cholesterol": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "saturated_fat": {
+          "value": null,
+          "not_in_fatty_acid_table": true
         }
       }
     },
@@ -1087,6 +1748,68 @@
         },
         "saturated_fat": {
           "value": 2.12
+        }
+      }
+    },
+    "17035": {
+      "code": "17035",
+      "name": "＜調味料類＞ （トマト加工品類） トマトペースト",
+      "per_100g": {
+        "calories": {
+          "value": 94.0
+        },
+        "protein": {
+          "value": 3.8
+        },
+        "fat": {
+          "value": 0.1
+        },
+        "carbohydrate": {
+          "value": 22.0
+        },
+        "dietary_fiber": {
+          "value": 4.7
+        },
+        "salt": {
+          "value": 0.1
+        },
+        "cholesterol": {
+          "value": 0.0,
+          "mext_estimated": true
+        },
+        "saturated_fat": {
+          "value": 0.02,
+          "mext_estimated": true
+        }
+      }
+    },
+    "17036": {
+      "code": "17036",
+      "name": "＜調味料類＞ （トマト加工品類） トマトケチャップ",
+      "per_100g": {
+        "calories": {
+          "value": 116.0
+        },
+        "protein": {
+          "value": 1.6
+        },
+        "fat": {
+          "value": 0.2
+        },
+        "carbohydrate": {
+          "value": 27.6
+        },
+        "dietary_fiber": {
+          "value": 1.7
+        },
+        "salt": {
+          "value": 3.1
+        },
+        "cholesterol": {
+          "value": 0.0
+        },
+        "saturated_fat": {
+          "value": 0.03
         }
       }
     },

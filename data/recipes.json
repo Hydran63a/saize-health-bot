@@ -1,12 +1,19 @@
 {
   "schema_version": 1,
   "assumption_policy": "材料と分量は、一般的な調理法と公式アレルゲン表示を手がかりにした仮定です。サイゼリヤの公式レシピではありません。推定値の計算にのみ使用し、公式値としては扱いません。",
+  "process_legend": {
+    "tuned_to_official": "公式のエネルギー・食塩相当量を見ながら分量を決めた（照合は独立した検証にならない）",
+    "blind": "計算前に一般的な1人前の分量で決め、計算後は調整していない（照合が答え合わせになる）",
+    "revised": "blind で信頼度 very_low になったため見直した（理由は revision_notes に記録）"
+  },
   "notes": {
     "dressing_30g": "サイゼリヤドレッシング30g分の仮定配合（マヨネーズ15g・なたね油4.5g・りんご酢9.6g・食塩0.54g）。公式値（30gあたり142kcal・食塩0.8g）にほぼ一致し、公式アレルゲン（卵・大豆・りんご）とも矛盾しない配合として設定。"
   },
   "recipes": [
     {
       "menu_id": "ライス#1",
+      "process": "tuned_to_official",
+      "revision": 1,
       "notes": "精白米のごはんのみと仮定。",
       "ingredients": [
         {"label": "ごはん", "food_code": "01088", "grams": 200}
@@ -14,6 +21,8 @@
     },
     {
       "menu_id": "小エビのサラダ",
+      "process": "tuned_to_official",
+      "revision": 1,
       "notes": "レタス中心のサラダに小エビとドレッシング30gと仮定。",
       "ingredients": [
         {"label": "レタス", "food_code": "06312", "grams": 50},
@@ -27,6 +36,8 @@
     },
     {
       "menu_id": "わかめのサラダ",
+      "process": "tuned_to_official",
+      "revision": 1,
       "notes": "レタスとわかめ（乾燥わかめ水戻し）にドレッシング30gと仮定。",
       "ingredients": [
         {"label": "レタス", "food_code": "06312", "grams": 50},
@@ -39,6 +50,8 @@
     },
     {
       "menu_id": "柔らか青豆の温サラダ",
+      "process": "tuned_to_official",
+      "revision": 1,
       "notes": "青えんどう（冷凍グリンピースをゆでたもの）に温泉卵・粉チーズ・オリーブ油と仮定。公式アレルゲン（卵・乳）と矛盾しない材料のみ。",
       "ingredients": [
         {"label": "グリンピース", "food_code": "06374", "grams": 120},
@@ -50,6 +63,8 @@
     },
     {
       "menu_id": "ほうれん草のソテー",
+      "process": "tuned_to_official",
+      "revision": 1,
       "notes": "冷凍ほうれん草をバターと油でソテーし、ベーコン・コーン・ブイヨンを加えたと仮定（公式アレルゲンの豚肉・鶏肉・ゼラチン・小麦から推測）。",
       "ingredients": [
         {"label": "ほうれん草（冷凍）", "food_code": "06269", "grams": 120},
@@ -62,6 +77,8 @@
     },
     {
       "menu_id": "キャロットラぺ",
+      "process": "tuned_to_official",
+      "revision": 1,
       "notes": "千切りにんじんをオレンジ果汁・オリーブ油・りんご酢・塩で和えたと仮定。",
       "ingredients": [
         {"label": "にんじん", "food_code": "06214", "grams": 80},
@@ -73,6 +90,8 @@
     },
     {
       "menu_id": "田舎風ミネストローネ",
+      "process": "tuned_to_official",
+      "revision": 1,
       "notes": "トマトベースの野菜スープにベーコン・パスタ・粉チーズ・ブイヨンと仮定。",
       "ingredients": [
         {"label": "トマト（ホール缶）", "food_code": "06184", "grams": 80},
@@ -90,6 +109,8 @@
     },
     {
       "menu_id": "ミラノ風ドリア#1",
+      "process": "tuned_to_official",
+      "revision": 1,
       "notes": "ごはんにホワイトソースと牛ひき肉のミートソース、粉チーズをのせて焼いたと仮定。ミートソースは成分表の既製品に飽和脂肪酸の値が無いため材料に分解。",
       "ingredients": [
         {"label": "ごはん", "food_code": "01088", "grams": 180},
@@ -106,6 +127,8 @@
     },
     {
       "menu_id": "ペペロンチーノ",
+      "process": "tuned_to_official",
+      "revision": 1,
       "notes": "乾麺100gをゆで、オリーブ油・にんにく・唐辛子・ブイヨンで和えたと仮定。ゆで汁の塩分は食塩として別に計上。",
       "ingredients": [
         {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
@@ -118,6 +141,8 @@
     },
     {
       "menu_id": "ハンバーグステーキ",
+      "process": "tuned_to_official",
+      "revision": 1,
       "notes": "牛豚合いびきのハンバーグにデミグラスソース、付け合わせにフライドポテトとコーンと仮定。デミグラスソースは成分表に飽和脂肪酸・食物繊維の値が無い。",
       "ingredients": [
         {"label": "牛ひき肉", "food_code": "11089", "grams": 80},
@@ -129,6 +154,224 @@
         {"label": "食塩", "food_code": "17012", "grams": 0.8},
         {"label": "調合油", "food_code": "14006", "grams": 3},
         {"label": "デミグラスソース", "food_code": "17105", "grams": 50},
+        {"label": "フライドポテト", "food_code": "02020", "grams": 40},
+        {"label": "コーン（缶詰）", "food_code": "06180", "grams": 20}
+      ]
+    },
+    {
+      "menu_id": "チキンのサラダ",
+      "process": "blind",
+      "revision": 1,
+      "notes": "レタス中心のサラダに蒸し鶏（鶏むね皮なし、生の値で代用）とドレッシング30gと仮定。",
+      "ingredients": [
+        {"label": "レタス", "food_code": "06312", "grams": 50},
+        {"label": "レッドキャベツ", "food_code": "06064", "grams": 10},
+        {"label": "蒸し鶏（鶏むね皮なし）", "food_code": "11220", "grams": 40},
+        {"label": "ドレッシング（マヨネーズ）", "food_code": "17042", "grams": 15, "group": "dressing_30g"},
+        {"label": "ドレッシング（なたね油）", "food_code": "14008", "grams": 4.5, "group": "dressing_30g"},
+        {"label": "ドレッシング（りんご酢）", "food_code": "17018", "grams": 9.6, "group": "dressing_30g"},
+        {"label": "ドレッシング（食塩）", "food_code": "17012", "grams": 0.54, "group": "dressing_30g"}
+      ]
+    },
+    {
+      "menu_id": "コーンクリームスープ",
+      "process": "blind",
+      "revision": 1,
+      "notes": "クリームコーン缶に牛乳・生クリーム・バター・小麦粉・ブイヨン（カップ1杯分）と仮定。",
+      "ingredients": [
+        {"label": "クリームコーン（缶詰）", "food_code": "06179", "grams": 80},
+        {"label": "牛乳", "food_code": "13003", "grams": 60},
+        {"label": "生クリーム", "food_code": "13014", "grams": 10},
+        {"label": "有塩バター", "food_code": "14017", "grams": 3},
+        {"label": "薄力粉", "food_code": "01015", "grams": 3},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1.5}
+      ]
+    },
+    {
+      "menu_id": "たまねぎのズッパ",
+      "process": "revised",
+      "revision": 2,
+      "revision_notes": [
+        "rev1（blind）: 倍率1.5・食塩 推定3.16g/公式2.4g で very_low。",
+        "rev2: オーブンで焼くスープはパンとチーズをのせて焼き上げる作りが一般的なため、上にのせるパン・チーズの量を過小に見積もっていたと判断（パン20→30g、チーズ5→10g）。食塩過多のためブイヨン3→2g。"
+      ],
+      "notes": "炒めたまねぎのスープにパン・粉チーズ・卵・ベーコン・ブイヨンと仮定（あめ色たまねぎは成分表に飽和脂肪酸の値が無いため、油いためで代用）。",
+      "ingredients": [
+        {"label": "たまねぎ（油いため）", "food_code": "06336", "grams": 60},
+        {"label": "パン（フランスパン）", "food_code": "01031", "grams": 30},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 10},
+        {"label": "鶏卵", "food_code": "12004", "grams": 10},
+        {"label": "ベーコン", "food_code": "11183", "grams": 10},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 2}
+      ]
+    },
+    {
+      "menu_id": "フォッカチオ#1",
+      "process": "blind",
+      "revision": 1,
+      "notes": "強力粉の生地にオリーブ油と塩（1個分）と仮定。水・イーストは成分への影響が小さいため省略。",
+      "ingredients": [
+        {"label": "強力粉", "food_code": "01020", "grams": 55},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 5},
+        {"label": "食塩", "food_code": "17012", "grams": 0.6}
+      ]
+    },
+    {
+      "menu_id": "ガーリックフォッカチオ#1",
+      "process": "blind",
+      "revision": 1,
+      "notes": "フォッカチオにガーリックバター（公式アレルゲンの乳・大豆からマーガリンと仮定）を塗ったもの。",
+      "ingredients": [
+        {"label": "強力粉", "food_code": "01020", "grams": 55},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 5},
+        {"label": "食塩", "food_code": "17012", "grams": 0.5},
+        {"label": "マーガリン（有塩）", "food_code": "14020", "grams": 6},
+        {"label": "にんにく", "food_code": "06223", "grams": 2},
+        {"label": "パセリ", "food_code": "06239", "grams": 0.5}
+      ]
+    },
+    {
+      "menu_id": "小エビのカクテル",
+      "process": "blind",
+      "revision": 1,
+      "notes": "小エビにマヨネーズとケチャップのカクテルソース、レタス少々と仮定。",
+      "ingredients": [
+        {"label": "小エビ", "food_code": "10415", "grams": 50},
+        {"label": "レタス", "food_code": "06312", "grams": 20},
+        {"label": "マヨネーズ", "food_code": "17042", "grams": 10},
+        {"label": "トマトケチャップ", "food_code": "17036", "grams": 10},
+        {"label": "レモン果汁", "food_code": "07156", "grams": 3}
+      ]
+    },
+    {
+      "menu_id": "蒸し鶏の香味ソース",
+      "process": "blind",
+      "revision": 1,
+      "notes": "蒸し鶏（鶏むね皮なし、生の値で代用）にねぎ・しょうが・しょうゆ・ごま油・砂糖のソースと仮定。",
+      "ingredients": [
+        {"label": "蒸し鶏（鶏むね皮なし）", "food_code": "11220", "grams": 70},
+        {"label": "ねぎ", "food_code": "06226", "grams": 10},
+        {"label": "しょうが", "food_code": "06103", "grams": 2},
+        {"label": "こいくちしょうゆ", "food_code": "17007", "grams": 6},
+        {"label": "ごま油", "food_code": "14002", "grams": 4},
+        {"label": "砂糖", "food_code": "03003", "grams": 2}
+      ]
+    },
+    {
+      "menu_id": "生ハム",
+      "process": "blind",
+      "revision": 1,
+      "notes": "生ハム（促成）のみ、数枚分と仮定。",
+      "ingredients": [
+        {"label": "生ハム（促成）", "food_code": "11181", "grams": 15}
+      ]
+    },
+    {
+      "menu_id": "辛味チキン#1",
+      "process": "blind",
+      "revision": 1,
+      "notes": "鶏手羽先（可食部）に衣（小麦粉・卵）をつけて揚げ、唐辛子と塩で味付けと仮定。吸油量を調合油として計上。",
+      "ingredients": [
+        {"label": "鶏手羽先（可食部）", "food_code": "11285", "grams": 90},
+        {"label": "薄力粉", "food_code": "01015", "grams": 5},
+        {"label": "鶏卵", "food_code": "12004", "grams": 5},
+        {"label": "揚げ油（吸油分）", "food_code": "14006", "grams": 6},
+        {"label": "唐辛子（乾）", "food_code": "06172", "grams": 1},
+        {"label": "食塩", "food_code": "17012", "grams": 0.8}
+      ]
+    },
+    {
+      "menu_id": "アロスティチーニ（ラムの串焼き）",
+      "process": "blind",
+      "revision": 1,
+      "notes": "ラムもも（脂身つき、焼き）の串焼きを塩で味付けと仮定。香辛料は省略。",
+      "ingredients": [
+        {"label": "ラムもも（焼き）", "food_code": "11283", "grams": 70},
+        {"label": "食塩", "food_code": "17012", "grams": 0.5}
+      ]
+    },
+    {
+      "menu_id": "エスカルゴのオーブン焼き",
+      "process": "revised",
+      "revision": 2,
+      "revision_notes": [
+        "rev1（blind）: 倍率1.8 で very_low（計算エネルギーが公式の約半分）。",
+        "rev2: たっぷりのガーリックバターで焼く料理のため油脂を過小に見積もっていたと判断。公式アレルゲンに大豆があるため植物性油脂（マーガリン）も使うと仮定し、バター12→15g＋マーガリン5g。エスカルゴは6個分として30→40g。"
+      ],
+      "notes": "エスカルゴ（水煮缶）にガーリックバター・パセリ・パン粉をのせて焼いたと仮定。",
+      "ingredients": [
+        {"label": "エスカルゴ（水煮缶詰）", "food_code": "10291", "grams": 40},
+        {"label": "有塩バター", "food_code": "14017", "grams": 15},
+        {"label": "マーガリン（有塩）", "food_code": "14020", "grams": 5},
+        {"label": "にんにく", "food_code": "06223", "grams": 3},
+        {"label": "パセリ", "food_code": "06239", "grams": 1},
+        {"label": "パン粉（乾燥）", "food_code": "01079", "grams": 3},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 0.5}
+      ]
+    },
+    {
+      "menu_id": "ミートソースボロニア風#1",
+      "process": "blind",
+      "revision": 1,
+      "notes": "乾麺100gをゆで、牛ひき肉・トマト・香味野菜のミートソースと粉チーズと仮定。ゆで汁の塩分は食塩として計上。",
+      "ingredients": [
+        {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
+        {"label": "食塩（ゆで汁）", "food_code": "17012", "grams": 1.0},
+        {"label": "牛ひき肉", "food_code": "11089", "grams": 40},
+        {"label": "トマト（ホール缶）", "food_code": "06184", "grams": 50},
+        {"label": "トマトペースト", "food_code": "17035", "grams": 10},
+        {"label": "たまねぎ", "food_code": "06153", "grams": 20},
+        {"label": "にんじん", "food_code": "06214", "grams": 10},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 5},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 3},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1.5}
+      ]
+    },
+    {
+      "menu_id": "カルボナーラ",
+      "process": "blind",
+      "revision": 1,
+      "notes": "乾麺100gをゆで、ベーコン・卵黄・生クリーム・牛乳・粉チーズのソースと仮定。ゆで汁の塩分は食塩として計上。",
+      "ingredients": [
+        {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
+        {"label": "食塩（ゆで汁）", "food_code": "17012", "grams": 1.0},
+        {"label": "ベーコン", "food_code": "11183", "grams": 25},
+        {"label": "卵黄", "food_code": "12010", "grams": 15},
+        {"label": "生クリーム", "food_code": "13014", "grams": 40},
+        {"label": "牛乳", "food_code": "13003", "grams": 30},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 8},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 3},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1}
+      ]
+    },
+    {
+      "menu_id": "ペンネアラビアータ",
+      "process": "blind",
+      "revision": 1,
+      "notes": "ペンネ（乾90g）をゆで、トマト・にんにく・唐辛子・オリーブ油・ベーコン少々のソースと仮定。ゆで汁の塩分は食塩として計上。",
+      "ingredients": [
+        {"label": "ペンネ（乾）", "food_code": "01063", "grams": 90},
+        {"label": "食塩（ゆで汁）", "food_code": "17012", "grams": 1.0},
+        {"label": "トマト（ホール缶）", "food_code": "06184", "grams": 80},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 8},
+        {"label": "にんにく", "food_code": "06223", "grams": 3},
+        {"label": "唐辛子（乾）", "food_code": "06172", "grams": 0.5},
+        {"label": "ベーコン", "food_code": "11183", "grams": 10},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1.5}
+      ]
+    },
+    {
+      "menu_id": "若鶏のディアボラ風",
+      "process": "blind",
+      "revision": 1,
+      "notes": "鶏もも皮つき（焼き）に、たまねぎとしょうゆのソース、付け合わせにフライドポテトとコーンと仮定。",
+      "ingredients": [
+        {"label": "鶏もも皮つき（焼き）", "food_code": "11222", "grams": 160},
+        {"label": "食塩", "food_code": "17012", "grams": 1.2},
+        {"label": "たまねぎ", "food_code": "06153", "grams": 30},
+        {"label": "こいくちしょうゆ", "food_code": "17007", "grams": 5},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 5},
+        {"label": "調合油", "food_code": "14006", "grams": 5},
         {"label": "フライドポテト", "food_code": "02020", "grams": 40},
         {"label": "コーン（缶詰）", "food_code": "06180", "grams": 20}
       ]

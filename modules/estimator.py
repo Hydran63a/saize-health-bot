@@ -98,6 +98,11 @@ def estimate_recipe(recipe: dict[str, Any], menu_item: dict[str, Any], foods: di
         "name": menu_item["name"],
         "method": "recipe_calc_kcal_scaled",
         "confidence": judge_confidence(scale, salt_diff, len(ingredients)),
+        "assumption_process": recipe["process"],
+        "revision": recipe.get("revision", 1),
+        "revision_notes": recipe.get("revision_notes", []),
+        # 公式値を見ながら分量を決めた・見直した場合、照合は独立した答え合わせにならない
+        "checks_independent": recipe["process"] == "blind",
         "nutrients": estimates,
         "checks": {
             "calories_raw": round(raw_kcal),
@@ -123,6 +128,8 @@ def build_estimates(recipes_doc: dict[str, Any], menu: dict[str, Any], foods: di
         menu_id = recipe["menu_id"]
         if menu_id not in items:
             raise KeyError(f"menu.json に無いメニューです: {menu_id}")
+        if recipe.get("process") not in recipes_doc.get("process_legend", {}):
+            raise ValueError(f"{menu_id}: process が未設定か不明です: {recipe.get('process')!r}")
         unknown = [i["food_code"] for i in recipe["ingredients"] if i["food_code"] not in foods]
         if unknown:
             raise KeyError(f"{menu_id}: food_subset.json に無い食品番号 {unknown}（export を実行してください）")
@@ -155,13 +162,14 @@ def main() -> int:
         return 1
     ESTIMATES_JSON.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"出力: {ESTIMATES_JSON}（{len(doc['items'])} 品）")
-    print(f"{'メニュー':<16} 信頼度   倍率   塩分(推定/公式)  飽和脂肪酸  食物繊維")
+    print(f"{'メニュー':<16} 決め方   信頼度   倍率   塩分(推定/公式)  飽和脂肪酸  食物繊維")
     for it in doc["items"]:
         c, n = it["checks"], it["nutrients"]
         sat = n["saturated_fat"]["value"]
         fib = n["dietary_fiber"]["value"]
+        process = {"tuned_to_official": "調整済", "blind": "計算前", "revised": "見直し"}[it["assumption_process"]]
         print(
-            f"{it['name']:<16} {it['confidence']:<8} {c['kcal_scale']:<6} "
+            f"{it['name']:<16} {process:<6} {it['confidence']:<8} {c['kcal_scale']:<6} "
             f"{c['salt_estimated']}/{c['salt_official']:<10} "
             f"{'算出不可' if sat is None else f'{sat}g':<10} {'算出不可' if fib is None else f'{fib}g'}"
         )
