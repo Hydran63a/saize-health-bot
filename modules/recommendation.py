@@ -50,6 +50,7 @@ class Recommendation:
     menu_ids: list[str]
     names: list[str]
     staple_id: str
+    main_id: str | None  # 主菜（主菜なしの献立は None）
     pattern: str
     evaluation: MealEvaluation
     reasons: list[str]
@@ -138,34 +139,40 @@ def is_balanced(data: NutritionData, combo: list[str], ev: MealEvaluation) -> bo
 # ---------------------------------------------------------------------------
 
 
+def main_of(combo: list[str], mains: set[str]) -> str | None:
+    """組み合わせの中の主菜（無ければ None）。"""
+    return next((m for m in combo if m in mains), None)
+
+
 def remove_recent(
     candidates: list[tuple[list[str], MealEvaluation]],
     history: HistoryStore,
     now: datetime,
     combo_days: int,
     staple_days: int,
+    main_days: int = 0,
+    mains: set[str] = frozenset(),
 ) -> tuple[list[tuple[list[str], MealEvaluation]], list[str]]:
-    """最近おすすめしたものを外す。全部消えてしまうときは、ルールを順に緩める。"""
+    """最近おすすめしたものを外す。全部消えてしまうときは、ルールを1つずつ緩める。"""
     recent_combos = history.combo_keys_since(now - timedelta(days=combo_days))
     recent_staples = history.staples_since(now - timedelta(days=staple_days))
+    recent_mains = history.mains_since(now - timedelta(days=main_days))
 
-    def keep(c: list[str], check_combo: bool, check_staple: bool) -> bool:
-        if check_combo and make_combo_key(c) in recent_combos:
-            return False
-        if check_staple and c[0] in recent_staples:  # c[0] は必ず主食
-            return False
-        return True
-
-    # 緩める順番：まず主食のルール、次に組み合わせのルール
-    steps = [
-        (True, True, []),
-        (True, False, [f"主食の重複防止（{staple_days}日）を緩めました"]),
-        (False, False, [f"主食の重複防止（{staple_days}日）と組み合わせの重複防止（{combo_days}日）を緩めました"]),
+    # ルール名 → その組み合わせを「外すべき」かを判定する関数（日数が0のルールは使わない）
+    all_rules = [
+        (main_days, f"主菜の重複防止（{main_days}日）", lambda c: main_of(c, mains) in recent_mains),
+        (staple_days, f"主食の重複防止（{staple_days}日）", lambda c: c[0] in recent_staples),  # c[0] は必ず主食
+        (combo_days, f"組み合わせの重複防止（{combo_days}日）", lambda c: make_combo_key(c) in recent_combos),
     ]
-    for check_combo, check_staple, relaxed in steps:
-        remaining = [(c, ev) for c, ev in candidates if keep(c, check_combo, check_staple)]
+    rules = {name: rule for days, name, rule in all_rules if days > 0}
+    # 緩める順番：主菜 → 主食 → 組み合わせ（上から順に外していく）
+    names = list(rules)
+    for relaxed_count in range(len(names) + 1):
+        active = names[relaxed_count:]
+        remaining = [(c, ev) for c, ev in candidates if not any(rules[n](c) for n in active)]
         if remaining:
-            return remaining, relaxed
+            relaxed = names[:relaxed_count]
+            return remaining, ([f"{'と'.join(relaxed)}を緩めました"] if relaxed else [])
     return [], []
 
 
@@ -200,6 +207,7 @@ def recommend(
     *,
     combo_days: int,
     staple_days: int,
+    main_days: int = 0,
     rng: random.Random | None = None,
     prices: PriceTable | None = None,
     budget_yen: int | None = None,
@@ -231,7 +239,8 @@ def recommend(
         balanced = evaluated
         relaxed.append("塩分・飽和脂肪酸のふるい分けを満たす組み合わせが無いため、外しました")
 
-    remaining, relaxed_dup = remove_recent(balanced, history, now, combo_days, staple_days)
+    mains = set(slots.mains)
+    remaining, relaxed_dup = remove_recent(balanced, history, now, combo_days, staple_days, main_days, mains)
     relaxed += relaxed_dup
     combo, ev = rng.choice(remaining)
 
@@ -239,6 +248,7 @@ def recommend(
         menu_ids=combo,
         names=[data.items[m]["name"] for m in combo],
         staple_id=combo[0],
+        main_id=main_of(combo, mains),
         pattern=PATTERN_BALANCE,
         evaluation=ev,
         reasons=build_reasons(data, combo),
@@ -249,7 +259,8 @@ def recommend(
 
 
 def record(history: HistoryStore, rec: Recommendation, now: datetime, slot: str | None) -> None:
-    history.add(menu_ids=rec.menu_ids, staple_id=rec.staple_id, pattern=rec.pattern, slot=slot, created_at=now)
+    history.add(menu_ids=rec.menu_ids, staple_id=rec.staple_id, main_id=rec.main_id,
+                pattern=rec.pattern, slot=slot, created_at=now)
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -276,6 +287,7 @@ def main(argv: list[str] | None = None) -> int:
     kwargs = {
         "combo_days": settings.no_repeat_combo_days,
         "staple_days": settings.no_repeat_staple_days,
+        "main_days": settings.no_repeat_main_days,
         "rng": rng,
         "prices": prices,
         "budget_yen": budget,

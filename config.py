@@ -21,7 +21,12 @@ DEFAULT_POST_TIMES = "11:00,15:00"
 DEFAULT_TIMEZONE = "Asia/Tokyo"
 DEFAULT_NO_REPEAT_COMBO_DAYS = 30
 DEFAULT_NO_REPEAT_STAPLE_DAYS = 3
+DEFAULT_NO_REPEAT_MAIN_DAYS = 2
 DEFAULT_POST_MAX_CHARS = 500
+# 投稿の公開範囲。"specified"（指名した相手だけ）は相手の指定が要るので Bot の定期投稿では使わない
+POST_VISIBILITIES = ("public", "home", "followers")
+DEFAULT_POST_VISIBILITY = "public"
+DEFAULT_POST_LOCAL_ONLY = True  # True＝連合なし（ほかのサーバーに配送しない）
 DEFAULT_POST_BUDGET_YEN = 1000  # 定期投稿の献立の上限（税込）。0 なら上限なし
 DEFAULT_POST_HASHTAGS = "#unofficial_saize_health_navi"
 
@@ -35,6 +40,26 @@ def parse_hashtags(text: str) -> tuple[str, ...]:
         if not _HASHTAG.match(tag):
             raise ValueError(f"POST_HASHTAGS の形式が正しくありません（# から始まる英数字・_・日本語）: {tag!r}")
     return tags
+
+
+_HOST = re.compile(r"^[A-Za-z0-9]([A-Za-z0-9-]*[A-Za-z0-9])?(\.[A-Za-z0-9]([A-Za-z0-9-]*[A-Za-z0-9])?)+(:\d{1,5})?$")
+
+
+def parse_host(text: str) -> str:
+    """MISSKEY_HOST を確かめる。'misskey.example.com' のようにドメインだけを受け付ける（空欄は未設定）。"""
+    host = text.strip()
+    if host and not _HOST.match(host):
+        raise ValueError(
+            f"MISSKEY_HOST はドメインだけを書いてください（https:// や / は不要。例 misskey.example.com）: {host!r}"
+        )
+    return host.lower()
+
+
+def parse_visibility(text: str) -> str:
+    value = text.strip().lower()
+    if value not in POST_VISIBILITIES:
+        raise ValueError(f"POST_VISIBILITY は {' / '.join(POST_VISIBILITIES)} のどれかにしてください: {text!r}")
+    return value
 
 
 def _get_non_negative_int(name: str, default: int) -> int:
@@ -92,9 +117,13 @@ class Settings:
     # おすすめ投稿の時刻（timezone での時刻）。自動投稿は ENABLE_POSTING=true のときのみ
     post_times: tuple[tuple[int, int], ...]
     timezone: str
-    # 重複防止：同じ組み合わせ／同じ主食をおすすめしない日数
+    # 重複防止：同じ組み合わせ／同じ主食／同じ主菜をおすすめしない日数
     no_repeat_combo_days: int
     no_repeat_staple_days: int
+    no_repeat_main_days: int
+    # 投稿の公開範囲と、連合なし（localOnly）にするか
+    post_visibility: str
+    post_local_only: bool
     # 投稿文：最大文字数とハッシュタグ
     post_max_chars: int
     post_hashtags: tuple[str, ...]
@@ -104,6 +133,11 @@ class Settings:
     @property
     def post_times_text(self) -> str:
         return ", ".join(f"{h:02d}:{m:02d}" for h, m in self.post_times)
+
+    @property
+    def has_host(self) -> bool:
+        # .env.example のままの見本の値は「未設定」として扱う
+        return bool(self.misskey_host) and self.misskey_host != "misskey.example.com"
 
     @property
     def has_token(self) -> bool:
@@ -119,7 +153,7 @@ def load_settings(env_file: Path | None = None) -> Settings:
         db_path = BASE_DIR / db_path
 
     return Settings(
-        misskey_host=os.getenv("MISSKEY_HOST", "").strip(),
+        misskey_host=parse_host(os.getenv("MISSKEY_HOST", "")),
         misskey_token=os.getenv("MISSKEY_TOKEN", "").strip(),
         enable_posting=_get_bool("ENABLE_POSTING", False),
         http_timeout=_get_float("HTTP_TIMEOUT", 10.0),
@@ -130,6 +164,9 @@ def load_settings(env_file: Path | None = None) -> Settings:
         timezone=(os.getenv("TIMEZONE") or DEFAULT_TIMEZONE).strip(),
         no_repeat_combo_days=_get_non_negative_int("NO_REPEAT_COMBO_DAYS", DEFAULT_NO_REPEAT_COMBO_DAYS),
         no_repeat_staple_days=_get_non_negative_int("NO_REPEAT_STAPLE_DAYS", DEFAULT_NO_REPEAT_STAPLE_DAYS),
+        no_repeat_main_days=_get_non_negative_int("NO_REPEAT_MAIN_DAYS", DEFAULT_NO_REPEAT_MAIN_DAYS),
+        post_visibility=parse_visibility(os.getenv("POST_VISIBILITY") or DEFAULT_POST_VISIBILITY),
+        post_local_only=_get_bool("POST_LOCAL_ONLY", DEFAULT_POST_LOCAL_ONLY),
         post_max_chars=_get_non_negative_int("POST_MAX_CHARS", DEFAULT_POST_MAX_CHARS),
         post_hashtags=parse_hashtags(os.getenv("POST_HASHTAGS", DEFAULT_POST_HASHTAGS)),
         post_budget_yen=_get_non_negative_int("POST_BUDGET_YEN", DEFAULT_POST_BUDGET_YEN) or None,

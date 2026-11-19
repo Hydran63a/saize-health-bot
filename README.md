@@ -10,7 +10,7 @@
 - [ ] Phase 2：メニューデータ収集
 - [x] Phase 3：栄養評価機能（`python -m modules.nutrition 料理名 料理名 ...` で確認）
 - [ ] Phase 4：おすすめ生成（バランス献立・重複防止・投稿文は実装済み。`python -m modules.recommendation --slot 11:00` で投稿文を確認、`--simulate 20` で重複防止を確認、`--budget 800` で予算指定。定期投稿は税込1,000円以内が初期値）
-- [ ] Phase 5：Misskey連携
+- [ ] Phase 5：Misskey連携（投稿は実装済み。コマンド応答は未実装）
 - [ ] Phase 6：VPS移行
 
 ## セットアップ（Windows 11 / PowerShell）
@@ -72,6 +72,22 @@ python -m modules.estimator                 # estimates.json を更新
 
 `data/prices.json`：グランドメニュー（デジタルメニューブック 2026年10月版）から手で書き写した**標準価格**（税抜・税込）。
 地域価格店舗・価格改定先行店舗では価格が異なります。税込価格は「税抜×1.1（持ち帰り商品は×1.08）の切り捨て」と一致することを確認済みです。
+
+## Misskey への投稿
+
+1. Bot 用の Misskey アカウントを用意し、プロフィール設定で **Bot フラグをオン**にする
+2. 設定 > API > アクセストークンの発行 で、権限「アカウントの情報を見る」「ノートを作成・削除する」の**2つだけ**を付けて発行
+3. `.env` に `MISSKEY_HOST`（ドメインのみ）と `MISSKEY_TOKEN` を書く（トークンは誰にも見せない）
+
+```powershell
+python main.py check --account          # つながるか確認（Bot フラグも表示）
+python main.py post --slot 11:00 --dry-run   # 投稿せずに文章を確認
+python main.py post --slot 11:00        # ENABLE_POSTING=true のときだけ実際に投稿
+```
+
+- 公開範囲の初期値は `public`＋`localOnly`（連合なし＝ローカルタイムラインのみ）。`.env` の `POST_VISIBILITY` / `POST_LOCAL_ONLY` で変更
+- 投稿に成功したときだけ重複防止の履歴に記録（失敗した献立は記録しない）
+- ログは `logs/bot.log`（トークンは出力しない）
 
 ## 動作要件
 

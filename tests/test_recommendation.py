@@ -127,6 +127,26 @@ def test_recent_combo_and_staple_are_avoided():
             assert rec.relaxed_rules == []
 
 
+def test_recent_main_is_avoided():
+    data = make_data(extra_items=[item("ビーフ", 400, 1.0)], extra_tags={"ビーフ": ["主菜", "肉"]})
+    with HistoryStore(":memory:") as h:
+        # 1日前に「チキン」を主菜として出した → 主菜2日ルールで、ライスの献立は ビーフ になる
+        h.add(menu_ids=["ライス", "サラダ", "チキン"], staple_id="ライス", main_id="チキン", pattern="balance",
+              slot=None, created_at=NOW - timedelta(days=1))
+        for seed in range(20):
+            rec = rc.recommend(data, h, NOW, combo_days=30, staple_days=0, main_days=2, rng=random.Random(seed))
+            assert rec.main_id != "チキン"
+            assert rec.relaxed_rules == []
+
+
+def test_main_id_is_set_only_when_combo_has_main():
+    data = make_data()
+    with HistoryStore(":memory:") as h:
+        for seed in range(20):
+            rec = rc.recommend(data, h, NOW, combo_days=30, staple_days=3, main_days=2, rng=random.Random(seed))
+            assert (rec.main_id == "チキン") == ("チキン" in rec.menu_ids)
+
+
 def test_rules_are_relaxed_when_everything_is_recent():
     data = make_data()
     with HistoryStore(":memory:") as h:

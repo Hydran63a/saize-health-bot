@@ -9,7 +9,7 @@ import config
 def clean_env(monkeypatch):
     for name in ("MISSKEY_HOST", "MISSKEY_TOKEN", "ENABLE_POSTING", "HTTP_TIMEOUT", "LOG_LEVEL", "DB_PATH", "POST_TIMES", "TIMEZONE",
                  "NO_REPEAT_COMBO_DAYS", "NO_REPEAT_STAPLE_DAYS", "POST_MAX_CHARS", "POST_HASHTAGS",
-                 "POST_BUDGET_YEN"):
+                 "POST_BUDGET_YEN", "NO_REPEAT_MAIN_DAYS", "POST_VISIBILITY", "POST_LOCAL_ONLY"):
         monkeypatch.delenv(name, raising=False)
     return monkeypatch
 
@@ -94,6 +94,35 @@ def test_post_budget_default_and_zero_means_no_limit(clean_env, tmp_path):
     assert config.load_settings(env_file=tmp_path / "missing.env").post_budget_yen == 1000
     clean_env.setenv("POST_BUDGET_YEN", "0")
     assert config.load_settings(env_file=tmp_path / "missing.env").post_budget_yen is None
+
+
+def test_misskey_post_defaults(clean_env, tmp_path):
+    settings = config.load_settings(env_file=tmp_path / "missing.env")
+    assert settings.no_repeat_main_days == 2
+    assert settings.post_visibility == "public"
+    assert settings.post_local_only is True  # 連合なし（LTLのみ）
+
+
+@pytest.mark.parametrize("good", ["misskey.io", "misskey.example.com", "Misskey.Example.COM", "localhost.test:3000"])
+def test_valid_hosts(good):
+    assert config.parse_host(good) == good.lower()
+
+
+@pytest.mark.parametrize("bad", ["https://misskey.io", "misskey.io/", "misskey io", "misskey", "-bad.example"])
+def test_invalid_hosts(bad):
+    with pytest.raises(ValueError):
+        config.parse_host(bad)
+
+
+def test_invalid_visibility(clean_env, tmp_path):
+    clean_env.setenv("POST_VISIBILITY", "specified")
+    with pytest.raises(ValueError):
+        config.load_settings(env_file=tmp_path / "missing.env")
+
+
+def test_example_host_is_treated_as_unset(clean_env, tmp_path):
+    clean_env.setenv("MISSKEY_HOST", "misskey.example.com")
+    assert config.load_settings(env_file=tmp_path / "missing.env").has_host is False
 
 
 def test_env_example_has_no_real_secrets():

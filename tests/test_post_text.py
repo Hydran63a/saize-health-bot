@@ -43,7 +43,7 @@ def make_data(with_estimates=True, salad_salt=0.5):
 
 def make_rec(data, menu_ids):
     ev = nu.evaluate_meal(data, menu_ids)
-    return rc.Recommendation(menu_ids=menu_ids, names=menu_ids, staple_id=menu_ids[0], pattern="balance",
+    return rc.Recommendation(menu_ids=menu_ids, names=menu_ids, staple_id=menu_ids[0], main_id=None, pattern="balance",
                              evaluation=ev, reasons=rc.build_reasons(data, menu_ids))
 
 
