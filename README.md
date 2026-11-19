@@ -34,6 +34,14 @@ cp .env.example .env
 python main.py
 ```
 
+## メニューデータ
+
+- `data/raw/allergy_YYYY-MM-DD.tsv`：公式「[アレルゲン・カロリー塩分情報一覧](https://allergy.saizeriya.co.jp/allergy)」の写し（公式値のみ）
+- `data/raw/allergy_YYYY-MM-DD.meta.json`：取得元URL・公式更新日・取得日・sha256
+- `data/menu.json`：上記から生成（`python -m modules.menu_importer`）
+
+公式に掲載されていない栄養素（飽和脂肪酸・食物繊維など）は `null`（`not_published`）とし、推定値は別ファイルで管理します。
+
 ## 動作要件
 
 - Python 3.12 以上

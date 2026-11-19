@@ -1,0 +1,6009 @@
+{
+  "schema_version": 1,
+  "source": {
+    "name": "サイゼリヤ アレルゲン・カロリー塩分情報一覧",
+    "url": "https://allergy.saizeriya.co.jp/allergy",
+    "official_updated_at": "2026-11-17",
+    "captured_at": "2026-11-19",
+    "notes": [
+      "数値は1食あたり。",
+      "カロリーおよび塩分は、検査機関での分析値、「八訂日本食品標準成分表」による計算値のいずれか、または両方を組み合わせて算出した目安値。",
+      "微量の場合は「0」、1食あたりで計算できない場合は「-」と表示。",
+      "▲は「モッツァレラチーズの水牛の乳」を示す。"
+    ]
+  },
+  "status_legend": {
+    "official": "公式サイトに掲載された値",
+    "not_calculable": "公式表で「-」（1食あたりで計算できない）",
+    "unknown": "公式表で空欄",
+    "not_published": "公式サイトに掲載されていない（推定値は estimates.json で別管理）"
+  },
+  "items": [
+    {
+      "id": "小エビのサラダ",
+      "name": "小エビのサラダ",
+      "official_name": "小エビのサラダ",
+      "serving_note": null,
+      "source_row": 1,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 196,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.4,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "えび",
+        "卵",
+        "大豆",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "チキンのサラダ",
+      "name": "チキンのサラダ",
+      "official_name": "チキンのサラダ",
+      "serving_note": null,
+      "source_row": 2,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 267,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "卵",
+        "大豆",
+        "鶏肉",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "わかめのサラダ",
+      "name": "わかめのサラダ",
+      "official_name": "わかめのサラダ",
+      "serving_note": null,
+      "source_row": 3,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 169,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.9,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "卵",
+        "大豆",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "コーンクリームスープ",
+      "name": "コーンクリームスープ",
+      "official_name": "コーンクリームスープ",
+      "serving_note": null,
+      "source_row": 4,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 150,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "たまねぎのズッパ",
+      "name": "たまねぎのズッパ",
+      "official_name": "たまねぎのズッパ",
+      "serving_note": null,
+      "source_row": 5,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 278,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.4,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "田舎風ミネストローネ",
+      "name": "田舎風ミネストローネ",
+      "official_name": "田舎風ミネストローネ",
+      "serving_note": null,
+      "source_row": 6,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 183,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.4,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "フォッカチオ#1",
+      "name": "フォッカチオ",
+      "official_name": "フォッカチオ",
+      "serving_note": null,
+      "source_row": 7,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 241,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ガーリックフォッカチオ#1",
+      "name": "ガーリックフォッカチオ",
+      "official_name": "ガーリックフォッカチオ",
+      "serving_note": null,
+      "source_row": 8,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 297,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.7,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "シナモンフォッカチオ",
+      "name": "シナモンフォッカチオ",
+      "official_name": "シナモンフォッカチオ",
+      "serving_note": null,
+      "source_row": 9,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 273,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "チーズフォッカチオ",
+      "name": "チーズフォッカチオ",
+      "official_name": "チーズフォッカチオ",
+      "serving_note": null,
+      "source_row": 10,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 318,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "タラコフォッカチオ",
+      "name": "タラコフォッカチオ",
+      "official_name": "タラコフォッカチオ",
+      "serving_note": null,
+      "source_row": 11,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 291,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ライス#1",
+      "name": "ライス",
+      "official_name": "ライス",
+      "serving_note": null,
+      "source_row": 12,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 303,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0,
+          "status": "official",
+          "trace": true
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [],
+      "allergen_notes": []
+    },
+    {
+      "id": "ターメリックライス",
+      "name": "ターメリックライス",
+      "official_name": "ターメリックライス",
+      "serving_note": null,
+      "source_row": 13,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 475,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.7,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "キャロットラぺ",
+      "name": "キャロットラぺ",
+      "official_name": "キャロットラぺ",
+      "serving_note": null,
+      "source_row": 14,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 92,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "オレンジ",
+        "大豆",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "バッファローモッツァレラのカプレーゼ",
+      "name": "バッファローモッツァレラのカプレーゼ",
+      "official_name": "バッファローモッツァレラのカプレーゼ",
+      "serving_note": null,
+      "source_row": 15,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 254,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.4,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "乳"
+      ],
+      "allergen_notes": [
+        "乳：モッツァレラチーズの水牛の乳"
+      ]
+    },
+    {
+      "id": "小エビのカクテル",
+      "name": "小エビのカクテル",
+      "official_name": "小エビのカクテル",
+      "serving_note": null,
+      "source_row": 16,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 124,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "えび",
+        "卵",
+        "大豆",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "蒸し鶏の香味ソース",
+      "name": "蒸し鶏の香味ソース",
+      "official_name": "蒸し鶏の香味ソース",
+      "serving_note": null,
+      "source_row": 17,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 158,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.7,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "生ハム",
+      "name": "生ハム",
+      "official_name": "生ハム",
+      "serving_note": null,
+      "source_row": 18,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 36,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "豚肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "生ハムとバッファローモッツァレラの盛合せ",
+      "name": "生ハムとバッファローモッツァレラの盛合せ",
+      "official_name": "生ハムとバッファローモッツァレラの盛合せ",
+      "serving_note": null,
+      "source_row": 19,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 146,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "乳",
+        "豚肉"
+      ],
+      "allergen_notes": [
+        "乳：モッツァレラチーズの水牛の乳"
+      ]
+    },
+    {
+      "id": "柔らか青豆の温サラダ",
+      "name": "柔らか青豆の温サラダ",
+      "official_name": "柔らか青豆の温サラダ",
+      "serving_note": null,
+      "source_row": 20,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 215,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.9,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "卵",
+        "乳"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ほうれん草のソテー",
+      "name": "ほうれん草のソテー",
+      "official_name": "ほうれん草のソテー",
+      "serving_note": null,
+      "source_row": 21,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 223,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ポップコーンシュリンプ",
+      "name": "ポップコーンシュリンプ",
+      "official_name": "ポップコーンシュリンプ",
+      "serving_note": null,
+      "source_row": 22,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 257,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "えび",
+        "小麦",
+        "卵",
+        "大豆",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ポテトのグリル（ハッシュドポテト）",
+      "name": "ポテトのグリル（ハッシュドポテト）",
+      "official_name": "ポテトのグリル（ハッシュドポテト）",
+      "serving_note": null,
+      "source_row": 23,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 307,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.5,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "チョリソー（辛味ソーセージ）",
+      "name": "チョリソー（辛味ソーセージ）",
+      "official_name": "チョリソー（辛味ソーセージ）",
+      "serving_note": null,
+      "source_row": 24,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 382,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "豚肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "辛味チキン#1",
+      "name": "辛味チキン",
+      "official_name": "辛味チキン",
+      "serving_note": null,
+      "source_row": 25,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 295,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "アロスティチーニ（ラムの串焼き）",
+      "name": "アロスティチーニ（ラムの串焼き）",
+      "official_name": "アロスティチーニ（ラムの串焼き）",
+      "serving_note": null,
+      "source_row": 26,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 188,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [],
+      "allergen_notes": []
+    },
+    {
+      "id": "エスカルゴのオーブン焼き",
+      "name": "エスカルゴのオーブン焼き",
+      "official_name": "エスカルゴのオーブン焼き",
+      "serving_note": null,
+      "source_row": 27,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 220,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ムール貝のガーリック焼き",
+      "name": "ムール貝のガーリック焼き",
+      "official_name": "ムール貝のガーリック焼き",
+      "serving_note": null,
+      "source_row": 28,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 320,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "バッファローモッツァレラのマルゲリータピザ#1",
+      "name": "バッファローモッツァレラのマルゲリータピザ",
+      "official_name": "バッファローモッツァレラのマルゲリータピザ",
+      "serving_note": null,
+      "source_row": 29,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 536,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ソーセージピザ#1",
+      "name": "ソーセージピザ",
+      "official_name": "ソーセージピザ",
+      "serving_note": null,
+      "source_row": 30,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 640,
+          "status": "official"
+        },
+        "salt": {
+          "value": 3.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "豚肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "たっぷりコーンのピザ#1",
+      "name": "たっぷりコーンのピザ",
+      "official_name": "たっぷりコーンのピザ",
+      "serving_note": null,
+      "source_row": 31,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 564,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "野菜ときのこのピザ#1",
+      "name": "野菜ときのこのピザ",
+      "official_name": "野菜ときのこのピザ",
+      "serving_note": null,
+      "source_row": 32,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 568,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "タラコソースシシリー風#1",
+      "name": "タラコソースシシリー風",
+      "official_name": "タラコソースシシリー風",
+      "serving_note": null,
+      "source_row": 33,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 495,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.9,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "小エビのタラコソース",
+      "name": "小エビのタラコソース",
+      "official_name": "小エビのタラコソース",
+      "serving_note": null,
+      "source_row": 34,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 528,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.4,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "えび",
+        "小麦",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "パルマ風スパゲッティ#1",
+      "name": "パルマ風スパゲッティ",
+      "official_name": "パルマ風スパゲッティ",
+      "serving_note": null,
+      "source_row": 35,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 677,
+          "status": "official"
+        },
+        "salt": {
+          "value": 3.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ペンネアラビアータ",
+      "name": "ペンネアラビアータ",
+      "official_name": "ペンネアラビアータ",
+      "serving_note": null,
+      "source_row": 36,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 420,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.5,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ペペロンチーノ",
+      "name": "ペペロンチーノ",
+      "official_name": "ペペロンチーノ",
+      "serving_note": null,
+      "source_row": 37,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 542,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "大豆",
+        "鶏肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "半熟卵のぺペロンチーノ",
+      "name": "半熟卵のぺペロンチーノ",
+      "official_name": "半熟卵のぺペロンチーノ",
+      "serving_note": null,
+      "source_row": 38,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 625,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.5,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "大豆",
+        "鶏肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ミートソースボロニア風#1",
+      "name": "ミートソースボロニア風",
+      "official_name": "ミートソースボロニア風",
+      "serving_note": null,
+      "source_row": 39,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 543,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "半熟卵のミートソースボロニア風",
+      "name": "半熟卵のミートソースボロニア風",
+      "official_name": "半熟卵のミートソースボロニア風",
+      "serving_note": null,
+      "source_row": 40,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 626,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "イカの墨入りセピアソース",
+      "name": "イカの墨入りセピアソース",
+      "official_name": "イカの墨入りセピアソース",
+      "serving_note": null,
+      "source_row": 41,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 547,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "いか",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "スープ入り塩味ボンゴレ",
+      "name": "スープ入り塩味ボンゴレ",
+      "official_name": "スープ入り塩味ボンゴレ",
+      "serving_note": null,
+      "source_row": 42,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 649,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "大豆",
+        "鶏肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "カルボナーラ",
+      "name": "カルボナーラ",
+      "official_name": "カルボナーラ",
+      "serving_note": null,
+      "source_row": 43,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 732,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "半熟卵のカルボナーラ",
+      "name": "半熟卵のカルボナーラ",
+      "official_name": "半熟卵のカルボナーラ",
+      "serving_note": null,
+      "source_row": 44,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 815,
+          "status": "official"
+        },
+        "salt": {
+          "value": 3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "きのことほうれん草のクリームスパゲッティ",
+      "name": "きのことほうれん草のクリームスパゲッティ",
+      "official_name": "きのことほうれん草のクリームスパゲッティ",
+      "serving_note": null,
+      "source_row": 45,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 713,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.4,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ミラノ風ドリア#1",
+      "name": "ミラノ風ドリア",
+      "official_name": "ミラノ風ドリア",
+      "serving_note": null,
+      "source_row": 46,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 556,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "半熟卵のミラノ風ドリア",
+      "name": "半熟卵のミラノ風ドリア",
+      "official_name": "半熟卵のミラノ風ドリア",
+      "serving_note": null,
+      "source_row": 47,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 639,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.7,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "焼チーズ ミラノ風ドリア",
+      "name": "焼チーズ ミラノ風ドリア",
+      "official_name": "焼チーズ ミラノ風ドリア",
+      "serving_note": null,
+      "source_row": 48,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 674,
+          "status": "official"
+        },
+        "salt": {
+          "value": 3.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "タラコとポップコーンシュリンプのドリア",
+      "name": "タラコとポップコーンシュリンプのドリア",
+      "official_name": "タラコとポップコーンシュリンプのドリア",
+      "serving_note": null,
+      "source_row": 49,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 622,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "えび",
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ポップコーンシュリンプとタラコのクリームグラタン",
+      "name": "ポップコーンシュリンプとタラコのクリームグラタン",
+      "official_name": "ポップコーンシュリンプとタラコのクリームグラタン",
+      "serving_note": null,
+      "source_row": 50,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 601,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "えび",
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ハンバーグステーキ",
+      "name": "ハンバーグステーキ",
+      "official_name": "ハンバーグステーキ",
+      "serving_note": null,
+      "source_row": 51,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 557,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.5,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ディアボラ風ハンバーグ#1",
+      "name": "ディアボラ風ハンバーグ",
+      "official_name": "ディアボラ風ハンバーグ",
+      "serving_note": null,
+      "source_row": 52,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 664,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "イタリアンハンバーグ",
+      "name": "イタリアンハンバーグ",
+      "official_name": "イタリアンハンバーグ",
+      "serving_note": null,
+      "source_row": 53,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 631,
+          "status": "official"
+        },
+        "salt": {
+          "value": 3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "若鶏のディアボラ風",
+      "name": "若鶏のディアボラ風",
+      "official_name": "若鶏のディアボラ風",
+      "serving_note": null,
+      "source_row": 54,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 764,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.7,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "柔らかチキンのチーズ焼き",
+      "name": "柔らかチキンのチーズ焼き",
+      "official_name": "柔らかチキンのチーズ焼き",
+      "serving_note": null,
+      "source_row": 55,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 809,
+          "status": "official"
+        },
+        "salt": {
+          "value": 3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "牛肉",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ミックスグリル",
+      "name": "ミックスグリル",
+      "official_name": "ミックスグリル",
+      "serving_note": null,
+      "source_row": 56,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 730,
+          "status": "official"
+        },
+        "salt": {
+          "value": 3.5,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "えび",
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ラムのランプステーキ",
+      "name": "ラムのランプステーキ",
+      "official_name": "ラムのランプステーキ",
+      "serving_note": null,
+      "source_row": 57,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 356,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ビーフステーキ",
+      "name": "ビーフステーキ",
+      "official_name": "ビーフステーキ",
+      "serving_note": null,
+      "source_row": 58,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 418,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.4,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "牛肉",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "トッピング粉チーズ",
+      "name": "トッピング粉チーズ",
+      "official_name": "トッピング粉チーズ",
+      "serving_note": null,
+      "source_row": 59,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 93,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "卵",
+        "乳"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "トッピング半熟卵",
+      "name": "トッピング半熟卵",
+      "official_name": "トッピング半熟卵",
+      "serving_note": null,
+      "source_row": 60,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 83,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "卵"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "トッピング野菜ソース",
+      "name": "トッピング野菜ソース",
+      "official_name": "トッピング野菜ソース",
+      "serving_note": null,
+      "source_row": 61,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 123,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.5,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "やみつきスパイス",
+      "name": "やみつきスパイス",
+      "official_name": "やみつきスパイス",
+      "serving_note": null,
+      "source_row": 62,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 6,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.4,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [],
+      "allergen_notes": []
+    },
+    {
+      "id": "トッピング目玉焼き",
+      "name": "トッピング目玉焼き",
+      "official_name": "トッピング目玉焼き",
+      "serving_note": null,
+      "source_row": 63,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 78,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "卵"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ティラミスクラシコ",
+      "name": "ティラミスクラシコ",
+      "official_name": "ティラミスクラシコ",
+      "serving_note": null,
+      "source_row": 64,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 233,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "プリンとティラミスクラシコの盛合せ",
+      "name": "プリンとティラミスクラシコの盛合せ",
+      "official_name": "プリンとティラミスクラシコの盛合せ",
+      "serving_note": null,
+      "source_row": 65,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 456,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "イタリアンプリン",
+      "name": "イタリアンプリン",
+      "official_name": "イタリアンプリン",
+      "serving_note": null,
+      "source_row": 66,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 223,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "卵",
+        "乳",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ミルクジェラート",
+      "name": "ミルクジェラート",
+      "official_name": "ミルクジェラート",
+      "serving_note": null,
+      "source_row": 67,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 121,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ジェラート＆シナモンフォッカチオ",
+      "name": "ジェラート＆シナモンフォッカチオ",
+      "official_name": "ジェラート＆シナモンフォッカチオ",
+      "serving_note": null,
+      "source_row": 68,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 393,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.7,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "コーヒーゼリー＆ミルクジェラート",
+      "name": "コーヒーゼリー＆ミルクジェラート",
+      "official_name": "コーヒーゼリー＆ミルクジェラート",
+      "serving_note": null,
+      "source_row": 69,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 173,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "チョコレートケーキ",
+      "name": "チョコレートケーキ",
+      "official_name": "チョコレートケーキ",
+      "serving_note": null,
+      "source_row": 70,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 179,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "チョコレートケーキ＆ミルクジェラート",
+      "name": "チョコレートケーキ＆ミルクジェラート",
+      "official_name": "チョコレートケーキ＆ミルクジェラート",
+      "serving_note": null,
+      "source_row": 71,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 299,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "トリフアイスクリーム",
+      "name": "トリフアイスクリーム",
+      "official_name": "トリフアイスクリーム",
+      "serving_note": null,
+      "source_row": 72,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 171,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ドリンクバー(単品)",
+      "name": "ドリンクバー(単品)",
+      "official_name": "ドリンクバー(単品)",
+      "serving_note": null,
+      "source_row": 73,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 0,
+          "status": "official",
+          "trace": true
+        },
+        "salt": {
+          "value": 0,
+          "status": "official",
+          "trace": true
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "乳",
+        "オレンジ",
+        "大豆",
+        "もも",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "アサヒドライゼロ",
+      "name": "アサヒドライゼロ",
+      "official_name": "アサヒドライゼロ",
+      "serving_note": null,
+      "source_row": 74,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 0,
+          "status": "official",
+          "trace": true
+        },
+        "salt": {
+          "value": 0,
+          "status": "official",
+          "trace": true
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "サイゼリヤドレッシング※1食30gあたり",
+      "name": "サイゼリヤドレッシング",
+      "official_name": "サイゼリヤドレッシング※1食30gあたり",
+      "serving_note": "1食30gあたり",
+      "source_row": 75,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 142,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "卵",
+        "大豆",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "食卓塩※1gあたり",
+      "name": "食卓塩",
+      "official_name": "食卓塩※1gあたり",
+      "serving_note": "1gあたり",
+      "source_row": 76,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 0,
+          "status": "official",
+          "trace": true
+        },
+        "salt": {
+          "value": 1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [],
+      "allergen_notes": []
+    },
+    {
+      "id": "ブラックペッパー※1gあたり",
+      "name": "ブラックペッパー",
+      "official_name": "ブラックペッパー※1gあたり",
+      "serving_note": "1gあたり",
+      "source_row": 77,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 4,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0,
+          "status": "official",
+          "trace": true
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [],
+      "allergen_notes": []
+    },
+    {
+      "id": "オリーブオイル※1gあたり",
+      "name": "オリーブオイル",
+      "official_name": "オリーブオイル※1gあたり",
+      "serving_note": "1gあたり",
+      "source_row": 78,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 9,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0,
+          "status": "official",
+          "trace": true
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [],
+      "allergen_notes": []
+    },
+    {
+      "id": "ホットソース※1gあたり",
+      "name": "ホットソース",
+      "official_name": "ホットソース※1gあたり",
+      "serving_note": "1gあたり",
+      "source_row": 79,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 0,
+          "status": "official",
+          "trace": true
+        },
+        "salt": {
+          "value": 0.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "アップルタルト",
+      "name": "アップルタルト",
+      "official_name": "アップルタルト",
+      "serving_note": null,
+      "source_row": 80,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 144,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "アップルタルト＆ミルクジェラート",
+      "name": "アップルタルト＆ミルクジェラート",
+      "official_name": "アップルタルト＆ミルクジェラート",
+      "serving_note": null,
+      "source_row": 81,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 265,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "塩キャラメルのメリンガータ",
+      "name": "塩キャラメルのメリンガータ",
+      "official_name": "塩キャラメルのメリンガータ",
+      "serving_note": null,
+      "source_row": 82,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 202,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "マロンソースのミルクジェラート",
+      "name": "マロンソースのミルクジェラート",
+      "official_name": "マロンソースのミルクジェラート",
+      "serving_note": null,
+      "source_row": 83,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 182,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "マロンソースのティラミス",
+      "name": "マロンソースのティラミス",
+      "official_name": "マロンソースのティラミス",
+      "serving_note": null,
+      "source_row": 84,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 293,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "プロフィットロール",
+      "name": "プロフィットロール",
+      "official_name": "プロフィットロール",
+      "serving_note": null,
+      "source_row": 85,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 226,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "プロフィットロール＆ミルクジェラート",
+      "name": "プロフィットロール＆ミルクジェラート",
+      "official_name": "プロフィットロール＆ミルクジェラート",
+      "serving_note": null,
+      "source_row": 86,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 346,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "牡蠣のオリーブオイル焼き",
+      "name": "牡蠣のオリーブオイル焼き",
+      "official_name": "牡蠣のオリーブオイル焼き",
+      "serving_note": null,
+      "source_row": 87,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 228,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "豚肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "牡蠣のグラタン",
+      "name": "牡蠣のグラタン",
+      "official_name": "牡蠣のグラタン",
+      "serving_note": null,
+      "source_row": 88,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 298,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.5,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "鶏肉",
+        "豚肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ランチスープ",
+      "name": "ランチスープ",
+      "official_name": "ランチスープ",
+      "serving_note": null,
+      "source_row": 89,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 8,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.7,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "牛肉",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ランチサラダ（ミニトマト）",
+      "name": "ランチサラダ（ミニトマト）",
+      "official_name": "ランチサラダ（ミニトマト）",
+      "serving_note": null,
+      "source_row": 90,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 56,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "卵",
+        "大豆",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ランチサラダ（コールスロー）",
+      "name": "ランチサラダ（コールスロー）",
+      "official_name": "ランチサラダ（コールスロー）",
+      "serving_note": null,
+      "source_row": 91,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 129,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "大豆",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ランチサラダ（コーン）",
+      "name": "ランチサラダ（コーン）",
+      "official_name": "ランチサラダ（コーン）",
+      "serving_note": null,
+      "source_row": 92,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 62,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "卵",
+        "大豆",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "タラコソースシシリー風#2",
+      "name": "タラコソースシシリー風",
+      "official_name": "タラコソースシシリー風",
+      "serving_note": null,
+      "source_row": 93,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 495,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.9,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "パルマ風スパゲッティ#2",
+      "name": "パルマ風スパゲッティ",
+      "official_name": "パルマ風スパゲッティ",
+      "serving_note": null,
+      "source_row": 94,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 677,
+          "status": "official"
+        },
+        "salt": {
+          "value": 3.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ミートソースボロニア風#2",
+      "name": "ミートソースボロニア風",
+      "official_name": "ミートソースボロニア風",
+      "serving_note": null,
+      "source_row": 95,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 543,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "オニオンソースのハンバーグ",
+      "name": "オニオンソースのハンバーグ",
+      "official_name": "オニオンソースのハンバーグ",
+      "serving_note": null,
+      "source_row": 96,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 492,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.4,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆",
+        "鶏肉",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ディアボラ風ハンバーグ#2",
+      "name": "ディアボラ風ハンバーグ",
+      "official_name": "ディアボラ風ハンバーグ",
+      "serving_note": null,
+      "source_row": 97,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 603,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ライス#2",
+      "name": "ライス",
+      "official_name": "ライス",
+      "serving_note": null,
+      "source_row": 98,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 303,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0,
+          "status": "official",
+          "trace": true
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [],
+      "allergen_notes": []
+    },
+    {
+      "id": "フォッカチオ#2",
+      "name": "フォッカチオ",
+      "official_name": "フォッカチオ",
+      "serving_note": null,
+      "source_row": 99,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 241,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ガーリックフォッカチオ#2",
+      "name": "ガーリックフォッカチオ",
+      "official_name": "ガーリックフォッカチオ",
+      "serving_note": null,
+      "source_row": 100,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 297,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.7,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "辛味チキン#2",
+      "name": "辛味チキン",
+      "official_name": "辛味チキン",
+      "serving_note": null,
+      "source_row": 101,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 295,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "バッファローモッツァレラのマルゲリータピザ#2",
+      "name": "バッファローモッツァレラのマルゲリータピザ",
+      "official_name": "バッファローモッツァレラのマルゲリータピザ",
+      "serving_note": null,
+      "source_row": 102,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 536,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "たっぷりコーンのピザ#2",
+      "name": "たっぷりコーンのピザ",
+      "official_name": "たっぷりコーンのピザ",
+      "serving_note": null,
+      "source_row": 103,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 564,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ソーセージピザ#2",
+      "name": "ソーセージピザ",
+      "official_name": "ソーセージピザ",
+      "serving_note": null,
+      "source_row": 104,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 640,
+          "status": "official"
+        },
+        "salt": {
+          "value": 3.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "豚肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "野菜ときのこのピザ#2",
+      "name": "野菜ときのこのピザ",
+      "official_name": "野菜ときのこのピザ",
+      "serving_note": null,
+      "source_row": 105,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 568,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "ミラノ風ドリア#2",
+      "name": "ミラノ風ドリア",
+      "official_name": "ミラノ風ドリア",
+      "serving_note": null,
+      "source_row": 106,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 556,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "牛肉",
+        "大豆",
+        "鶏肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "冷凍イタリアンプリン（1個）",
+      "name": "冷凍イタリアンプリン（1個）",
+      "official_name": "冷凍イタリアンプリン（1個）",
+      "serving_note": null,
+      "source_row": 107,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 223,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "卵",
+        "乳",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "サイゼリヤドレッシング（500ml）",
+      "name": "サイゼリヤドレッシング（500ml）",
+      "official_name": "サイゼリヤドレッシング（500ml）",
+      "serving_note": null,
+      "source_row": 108,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 2430,
+          "status": "official"
+        },
+        "salt": {
+          "value": 11.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "大豆",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "サイゼリヤドレッシング（300ml）※一部店舗",
+      "name": "サイゼリヤドレッシング（300ml）",
+      "official_name": "サイゼリヤドレッシング（300ml）※一部店舗",
+      "serving_note": "一部店舗",
+      "source_row": 109,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 1401,
+          "status": "official"
+        },
+        "salt": {
+          "value": 9.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "大豆",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "エクストラ・バージン・オリーブオイル（500ml）",
+      "name": "エクストラ・バージン・オリーブオイル（500ml）",
+      "official_name": "エクストラ・バージン・オリーブオイル（500ml）",
+      "serving_note": null,
+      "source_row": 110,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 4050,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0,
+          "status": "official",
+          "trace": true
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [],
+      "allergen_notes": []
+    },
+    {
+      "id": "ハンバーグモーニング",
+      "name": "ハンバーグモーニング",
+      "official_name": "ハンバーグモーニング",
+      "serving_note": null,
+      "source_row": 111,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 884,
+          "status": "official"
+        },
+        "salt": {
+          "value": 6.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "オレンジ",
+        "牛肉",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "りんご",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "タラコスパゲッティモーニング",
+      "name": "タラコスパゲッティモーニング",
+      "official_name": "タラコスパゲッティモーニング",
+      "serving_note": null,
+      "source_row": 112,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 822,
+          "status": "official"
+        },
+        "salt": {
+          "value": 5.6,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "オレンジ",
+        "牛肉",
+        "大豆",
+        "鶏肉",
+        "りんご"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "フォッカチオモーニング",
+      "name": "フォッカチオモーニング",
+      "official_name": "フォッカチオモーニング",
+      "serving_note": null,
+      "source_row": 113,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 913,
+          "status": "official"
+        },
+        "salt": {
+          "value": 6.5,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "オレンジ",
+        "牛肉",
+        "大豆",
+        "鶏肉",
+        "豚肉",
+        "りんご",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "フォッカチオ#3",
+      "name": "フォッカチオ",
+      "official_name": "フォッカチオ",
+      "serving_note": null,
+      "source_row": 114,
+      "duplicate_name": true,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 199,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.7,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "フォッカチオセット",
+      "name": "フォッカチオセット",
+      "official_name": "フォッカチオセット",
+      "serving_note": null,
+      "source_row": 115,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 294,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.2,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "大豆"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "焼きシナモンフォッカチオ",
+      "name": "焼きシナモンフォッカチオ",
+      "official_name": "焼きシナモンフォッカチオ",
+      "serving_note": null,
+      "source_row": 116,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 266,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "焼きシナモンフォッカチオセット",
+      "name": "焼きシナモンフォッカチオセット",
+      "official_name": "焼きシナモンフォッカチオセット",
+      "serving_note": null,
+      "source_row": 117,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 361,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "焼きシナモンフォッカチオコンビ",
+      "name": "焼きシナモンフォッカチオコンビ",
+      "official_name": "焼きシナモンフォッカチオコンビ",
+      "serving_note": null,
+      "source_row": 118,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 266,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.8,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆",
+        "ゼラチン"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "パンチェッタとチーズのパニーニ",
+      "name": "パンチェッタとチーズのパニーニ",
+      "official_name": "パンチェッタとチーズのパニーニ",
+      "serving_note": null,
+      "source_row": 119,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 339,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.5,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆",
+        "豚肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "パンチェッタとチーズのパニーニセット",
+      "name": "パンチェッタとチーズのパニーニセット",
+      "official_name": "パンチェッタとチーズのパニーニセット",
+      "serving_note": null,
+      "source_row": 120,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 434,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.1,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆",
+        "豚肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "パンチェッタとチーズのパニーニコンビ",
+      "name": "パンチェッタとチーズのパニーニコンビ",
+      "official_name": "パンチェッタとチーズのパニーニコンビ",
+      "serving_note": null,
+      "source_row": 121,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 339,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.5,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "乳",
+        "大豆",
+        "豚肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "卵とパンチェッタとチーズのパニーニ",
+      "name": "卵とパンチェッタとチーズのパニーニ",
+      "official_name": "卵とパンチェッタとチーズのパニーニ",
+      "serving_note": null,
+      "source_row": 122,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 418,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.9,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "豚肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "卵とパンチェッタとチーズのパニーニ コンビ",
+      "name": "卵とパンチェッタとチーズのパニーニ コンビ",
+      "official_name": "卵とパンチェッタとチーズのパニーニ コンビ",
+      "serving_note": null,
+      "source_row": 123,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 418,
+          "status": "official"
+        },
+        "salt": {
+          "value": 1.9,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "豚肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "卵とパンチェッタとチーズのパニーニ セット",
+      "name": "卵とパンチェッタとチーズのパニーニ セット",
+      "official_name": "卵とパンチェッタとチーズのパニーニ セット",
+      "serving_note": null,
+      "source_row": 124,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 513,
+          "status": "official"
+        },
+        "salt": {
+          "value": 2.5,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "小麦",
+        "卵",
+        "乳",
+        "大豆",
+        "豚肉"
+      ],
+      "allergen_notes": []
+    },
+    {
+      "id": "朝のバッファローモッツァレラのカプレーゼ",
+      "name": "朝のバッファローモッツァレラのカプレーゼ",
+      "official_name": "朝のバッファローモッツァレラのカプレーゼ",
+      "serving_note": null,
+      "source_row": 125,
+      "duplicate_name": false,
+      "category": null,
+      "price": null,
+      "available": true,
+      "nutrition": {
+        "calories": {
+          "value": 199,
+          "status": "official"
+        },
+        "salt": {
+          "value": 0.3,
+          "status": "official"
+        },
+        "protein": {
+          "value": null,
+          "status": "not_published"
+        },
+        "fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "saturated_fat": {
+          "value": null,
+          "status": "not_published"
+        },
+        "carbohydrate": {
+          "value": null,
+          "status": "not_published"
+        },
+        "dietary_fiber": {
+          "value": null,
+          "status": "not_published"
+        }
+      },
+      "allergens": [
+        "乳"
+      ],
+      "allergen_notes": [
+        "乳：モッツァレラチーズの水牛の乳"
+      ]
+    }
+  ]
+}
