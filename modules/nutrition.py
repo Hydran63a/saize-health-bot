@@ -91,6 +91,7 @@ class NutritionData:
         tags: dict[str, Any],
     ) -> None:
         self.items: dict[str, dict[str, Any]] = {i["id"]: i for i in menu["items"]}
+        self.source: dict[str, Any] = menu.get("source", {})  # 公式データの取得元・更新日
         self.estimates: dict[str, dict[str, Any]] = {e["menu_id"]: e for e in estimates["items"]}
         self.references = references
         self.tags: dict[str, list[str]] = tags["items"]
@@ -226,6 +227,7 @@ def evaluate_ldl(data: NutritionData, menu_ids: list[str]) -> PerspectiveResult:
         target = refs["saturated_fat"]["energy_pct_target"]
         result.values["saturated_fat_g"] = round(sat, 1)
         result.values["saturated_fat_energy_pct"] = round(sat_pct, 1)
+        result.values["saturated_fat_target_pct"] = target
         result.values["saturated_fat_level"] = saturated_fat_level(sat_pct, target)
     else:
         result.values["saturated_fat_level"] = NOT_EVALUATED

@@ -157,14 +157,16 @@ def test_no_repeat_over_many_posts():
 # ---------------------------------------------------------------------------
 
 
-def test_reasons_mention_staple_salad_and_official_salt():
+def test_reasons_explain_the_combination_only():
     data = make_data()
-    with HistoryStore(":memory:") as h:
-        rec = rc.recommend(data, h, NOW, combo_days=30, staple_days=3, rng=random.Random(1))
-    text = "\n".join(rec.reasons)
-    assert "主食は1品" in text
-    assert "サラダ" in text
-    assert "公式値" in text  # 塩分は公式値であることを明記
+    reasons = rc.build_reasons(data, ["ライス", "サラダ", "チキン"])
+    assert reasons == [
+        "主食は1品で、炭水化物が重なりません",
+        "サラダで野菜をプラス",
+        "チキンでたんぱく質をプラス",
+    ]
+    # 数値（塩分など）は post_text.py の担当なので、理由には入れない
+    assert not any("g" in r or "%" in r for r in reasons)
 
 
 def test_same_seed_gives_same_result():

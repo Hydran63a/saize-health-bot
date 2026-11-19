@@ -8,7 +8,7 @@ import config
 @pytest.fixture
 def clean_env(monkeypatch):
     for name in ("MISSKEY_HOST", "MISSKEY_TOKEN", "ENABLE_POSTING", "HTTP_TIMEOUT", "LOG_LEVEL", "DB_PATH", "POST_TIMES", "TIMEZONE",
-                 "NO_REPEAT_COMBO_DAYS", "NO_REPEAT_STAPLE_DAYS"):
+                 "NO_REPEAT_COMBO_DAYS", "NO_REPEAT_STAPLE_DAYS", "POST_MAX_CHARS", "POST_HASHTAGS"):
         monkeypatch.delenv(name, raising=False)
     return monkeypatch
 
@@ -68,6 +68,25 @@ def test_invalid_no_repeat_days_raise(clean_env, tmp_path):
     clean_env.setenv("NO_REPEAT_COMBO_DAYS", "-1")
     with pytest.raises(ValueError):
         config.load_settings(env_file=tmp_path / "missing.env")
+
+
+def test_default_post_settings(clean_env, tmp_path):
+    settings = config.load_settings(env_file=tmp_path / "missing.env")
+    assert settings.post_max_chars == 500
+    assert settings.post_hashtags == ("#unofficial_saize_health_navi",)
+
+
+def test_hashtags_parsing():
+    assert config.parse_hashtags("#a, #b_2 #サイゼ") == ("#a", "#b_2", "#サイゼ")
+    assert config.parse_hashtags("") == ()
+    for bad in ("nohash", "#has-hyphen", "#"):
+        with pytest.raises(ValueError):
+            config.parse_hashtags(bad)
+
+
+def test_empty_hashtags_env_means_no_tags(clean_env, tmp_path):
+    clean_env.setenv("POST_HASHTAGS", "")
+    assert config.load_settings(env_file=tmp_path / "missing.env").post_hashtags == ()
 
 
 def test_env_example_has_no_real_secrets():

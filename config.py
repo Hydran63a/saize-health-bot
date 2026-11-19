@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import os
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -20,14 +21,27 @@ DEFAULT_POST_TIMES = "11:00,15:00"
 DEFAULT_TIMEZONE = "Asia/Tokyo"
 DEFAULT_NO_REPEAT_COMBO_DAYS = 30
 DEFAULT_NO_REPEAT_STAPLE_DAYS = 3
+DEFAULT_POST_MAX_CHARS = 500
+DEFAULT_POST_HASHTAGS = "#unofficial_saize_health_navi"
+
+_HASHTAG = re.compile(r"^#[0-9A-Za-z_぀-ヿ一-鿿]+$")
 
 
-def _get_days(name: str, default: int) -> int:
+def parse_hashtags(text: str) -> tuple[str, ...]:
+    """'#a, #b' や '#a #b' → ('#a', '#b')。空なら () でタグなし。"""
+    tags = tuple(t for t in re.split(r"[,\s]+", text.strip()) if t)
+    for tag in tags:
+        if not _HASHTAG.match(tag):
+            raise ValueError(f"POST_HASHTAGS の形式が正しくありません（# から始まる英数字・_・日本語）: {tag!r}")
+    return tags
+
+
+def _get_non_negative_int(name: str, default: int) -> int:
     value = os.getenv(name)
     if value is None or value.strip() == "":
         return default
     if not value.strip().isdigit():
-        raise ValueError(f"環境変数 {name} は0以上の整数（日数）で指定してください: {value!r}")
+        raise ValueError(f"環境変数 {name} は0以上の整数で指定してください: {value!r}")
     return int(value)
 
 
@@ -80,6 +94,9 @@ class Settings:
     # 重複防止：同じ組み合わせ／同じ主食をおすすめしない日数
     no_repeat_combo_days: int
     no_repeat_staple_days: int
+    # 投稿文：最大文字数とハッシュタグ
+    post_max_chars: int
+    post_hashtags: tuple[str, ...]
 
     @property
     def post_times_text(self) -> str:
@@ -108,6 +125,8 @@ def load_settings(env_file: Path | None = None) -> Settings:
         log_dir=BASE_DIR / "logs",
         post_times=parse_post_times(os.getenv("POST_TIMES") or DEFAULT_POST_TIMES),
         timezone=(os.getenv("TIMEZONE") or DEFAULT_TIMEZONE).strip(),
-        no_repeat_combo_days=_get_days("NO_REPEAT_COMBO_DAYS", DEFAULT_NO_REPEAT_COMBO_DAYS),
-        no_repeat_staple_days=_get_days("NO_REPEAT_STAPLE_DAYS", DEFAULT_NO_REPEAT_STAPLE_DAYS),
+        no_repeat_combo_days=_get_non_negative_int("NO_REPEAT_COMBO_DAYS", DEFAULT_NO_REPEAT_COMBO_DAYS),
+        no_repeat_staple_days=_get_non_negative_int("NO_REPEAT_STAPLE_DAYS", DEFAULT_NO_REPEAT_STAPLE_DAYS),
+        post_max_chars=_get_non_negative_int("POST_MAX_CHARS", DEFAULT_POST_MAX_CHARS),
+        post_hashtags=parse_hashtags(os.getenv("POST_HASHTAGS", DEFAULT_POST_HASHTAGS)),
     )
