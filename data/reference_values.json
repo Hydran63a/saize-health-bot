@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "source": {
+    "name": "日本人の食事摂取基準（2025年版）策定検討会報告書（厚生労働省）",
+    "url": "https://www.mhlw.go.jp/stf/newpage_44138.html",
+    "checked_at": "2026-11-19"
+  },
+  "meals_per_day": 3,
+  "meals_per_day_note": "1食の目安＝1日の目標量÷3 とするのは本Bot独自の簡易な決まりです（食事摂取基準の値ではありません）。",
+  "salt": {
+    "daily_target_g": 6.5,
+    "comparison": "less_than",
+    "options": {"成人男性": 7.5, "成人女性": 6.5, "高血圧・慢性腎臓病の重症化予防": 6.0},
+    "selected_reason": "男女共通で使えるよう、低い方の目標量（成人女性）を採用。",
+    "source_page": "p.281 ナトリウムの食事摂取基準（食塩相当量）"
+  },
+  "saturated_fat": {
+    "energy_pct_target": 7,
+    "comparison": "at_most",
+    "note": "18歳以上の男女とも 7%エネルギー以下。",
+    "source_page": "p.127 飽和脂肪酸の食事摂取基準"
+  },
+  "dietary_fiber": {
+    "daily_target_g": 20,
+    "comparison": "at_least",
+    "options": {"成人男性（18〜29歳）": 20, "成人男性（30〜64歳）": 22, "成人女性（18〜64歳）": 18},
+    "selected_reason": "男女の目標量の中間の値を採用。",
+    "source_page": "p.144 食物繊維の食事摂取基準"
+  },
+  "cholesterol": {
+    "daily_reference_mg": 200,
+    "comparison": "less_than",
+    "note": "コレステロールに目標量は設定されていない。脂質異常症の重症化予防の目的からは 200mg/日未満に留めることが望ましいとされている。本Botでは参考表示のみ（判定しない）。",
+    "source_page": "p.127 飽和脂肪酸の食事摂取基準 脚注1"
+  }
+}

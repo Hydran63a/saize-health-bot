@@ -8,7 +8,7 @@
 
 - [x] Phase 1：開発環境構築
 - [ ] Phase 2：メニューデータ収集
-- [ ] Phase 3：栄養評価機能
+- [x] Phase 3：栄養評価機能（`python -m modules.nutrition 料理名 料理名 ...` で確認）
 - [ ] Phase 4：おすすめ生成
 - [ ] Phase 5：Misskey連携
 - [ ] Phase 6：VPS移行
@@ -59,6 +59,14 @@ python -m modules.estimator                 # estimates.json を更新
 本表 第2章 → `data/external/mext_honpyo_ch2.xlsx`、脂肪酸成分表編 第2章第1表 → `data/external/mext_fattyacid_ch2_t1.xlsx`
 
 **出典：日本食品標準成分表（八訂）増補2023年から引用（文部科学省）**
+
+### 栄養評価の基準値
+
+`data/reference_values.json`：[日本人の食事摂取基準（2025年版）](https://www.mhlw.go.jp/stf/newpage_44138.html)（厚生労働省）の目標量。
+食塩相当量 6.5g未満/日、飽和脂肪酸 7%エネルギー以下、食物繊維 20g以上/日（本Botの採用値）。
+1食の目安を「1日の目標量÷3」とするのは本Bot独自の簡易な決まりです。
+
+`data/menu_tags.json`：料理の材料タグ（本Bot独自の分類。公式情報ではありません）。
 
 ## 動作要件
 
