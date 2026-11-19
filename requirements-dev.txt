@@ -1,0 +1,3 @@
+# 開発・テスト用（VPSには不要）
+-r requirements.txt
+pytest>=8.0

@@ -1,0 +1,23 @@
+# 秘密情報（絶対に公開しない）
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# 実行時に生成されるファイル
+logs/*
+!logs/.gitkeep
+*.sqlite3
+*.db
+
+# エディタ・OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

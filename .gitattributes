@@ -1,0 +1,7 @@
+# 改行コードを LF に統一する（Linux VPS での実行を考慮）
+* text=auto eol=lf
+
+# Windows 専用スクリプトは CRLF のまま
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf

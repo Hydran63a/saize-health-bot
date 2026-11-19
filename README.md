@@ -1,0 +1,39 @@
+# Saize Health Bot（仮称）
+
+サイゼリヤのメニューから、LDLコレステロール・中性脂肪・塩分などを意識した食事選びをサポートする Misskey Bot です。
+
+> ⚠️ 本Botは医療上の診断・治療の代わりにはなりません。栄養情報は公式値と推定値を区別して扱い、不明な値は表示しません。
+
+## 開発状況
+
+- [x] Phase 1：開発環境構築
+- [ ] Phase 2：メニューデータ収集
+- [ ] Phase 3：栄養評価機能
+- [ ] Phase 4：おすすめ生成
+- [ ] Phase 5：Misskey連携
+- [ ] Phase 6：VPS移行
+
+## セットアップ（Windows 11 / PowerShell）
+
+```powershell
+py -3.14 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements-dev.txt
+Copy-Item .env.example .env   # 必要に応じて値を編集
+python main.py                # 環境チェック
+python -m pytest              # テスト
+```
+
+## セットアップ（Linux）
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+python main.py
+```
+
+## 動作要件
+
+- Python 3.12 以上
