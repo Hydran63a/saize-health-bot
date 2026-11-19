@@ -375,6 +375,346 @@
         {"label": "フライドポテト", "food_code": "02020", "grams": 40},
         {"label": "コーン（缶詰）", "food_code": "06180", "grams": 20}
       ]
+    },
+    {
+      "menu_id": "きのことほうれん草のクリームスパゲッティ",
+      "process": "blind",
+      "revision": 1,
+      "notes": "乾麺100gをゆで、生クリーム・牛乳のソースにきのこ・ほうれん草・ベーコン・粉チーズと仮定。",
+      "ingredients": [
+        {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
+        {"label": "食塩（ゆで汁）", "food_code": "17012", "grams": 1.0},
+        {"label": "生クリーム", "food_code": "13014", "grams": 40},
+        {"label": "牛乳", "food_code": "13003", "grams": 40},
+        {"label": "しめじ", "food_code": "08016", "grams": 25},
+        {"label": "マッシュルーム", "food_code": "08031", "grams": 15},
+        {"label": "ほうれん草（冷凍）", "food_code": "06269", "grams": 30},
+        {"label": "ベーコン", "food_code": "11183", "grams": 10},
+        {"label": "有塩バター", "food_code": "14017", "grams": 5},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 5},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1.5}
+      ]
+    },
+    {
+      "menu_id": "イカの墨入りセピアソース",
+      "process": "blind",
+      "revision": 1,
+      "notes": "乾麺100gをゆで、いか・たまねぎ・トマト・オリーブ油・にんにくのソースと仮定。イカ墨は成分表に無いため省略（少量のため影響は小さいと判断）。",
+      "ingredients": [
+        {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
+        {"label": "食塩（ゆで汁）", "food_code": "17012", "grams": 1.0},
+        {"label": "いか", "food_code": "10345", "grams": 40},
+        {"label": "たまねぎ", "food_code": "06153", "grams": 15},
+        {"label": "トマト（ホール缶）", "food_code": "06184", "grams": 30},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 10},
+        {"label": "にんにく", "food_code": "06223", "grams": 3},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1.5}
+      ]
+    },
+    {
+      "menu_id": "スープ入り塩味ボンゴレ",
+      "process": "revised",
+      "revision": 2,
+      "revision_notes": [
+        "rev1（blind）: 倍率1.42・食塩 推定3.8g/公式2.6g で very_low。",
+        "rev2: エネルギー不足は不確かな油脂量の過小見積もりと判断しオリーブ油10→20g。食塩過多はブイヨンの過大見積もりと判断し2.5→1.5g。"
+      ],
+      "notes": "乾麺100gをゆで、あさり・オリーブ油・にんにく・唐辛子とブイヨンのスープと仮定。",
+      "ingredients": [
+        {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
+        {"label": "食塩（ゆで汁）", "food_code": "17012", "grams": 1.0},
+        {"label": "あさり（可食部）", "food_code": "10281", "grams": 30},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 20},
+        {"label": "にんにく", "food_code": "06223", "grams": 3},
+        {"label": "唐辛子（乾）", "food_code": "06172", "grams": 0.5},
+        {"label": "パセリ", "food_code": "06239", "grams": 1},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1.5}
+      ]
+    },
+    {
+      "menu_id": "タラコソースシシリー風#1",
+      "process": "blind",
+      "revision": 1,
+      "notes": "乾麺100gをゆで、たらこ・バター・牛乳・しょうゆ少々で和えたと仮定。",
+      "ingredients": [
+        {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
+        {"label": "食塩（ゆで汁）", "food_code": "17012", "grams": 1.0},
+        {"label": "たらこ", "food_code": "10202", "grams": 25},
+        {"label": "有塩バター", "food_code": "14017", "grams": 10},
+        {"label": "牛乳", "food_code": "13003", "grams": 10},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 3},
+        {"label": "こいくちしょうゆ", "food_code": "17007", "grams": 2}
+      ]
+    },
+    {
+      "menu_id": "小エビのタラコソース",
+      "process": "blind",
+      "revision": 1,
+      "notes": "タラコソースシシリー風と同じソースに小エビを加えたと仮定。",
+      "ingredients": [
+        {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
+        {"label": "食塩（ゆで汁）", "food_code": "17012", "grams": 1.0},
+        {"label": "たらこ", "food_code": "10202", "grams": 25},
+        {"label": "小エビ", "food_code": "10415", "grams": 30},
+        {"label": "有塩バター", "food_code": "14017", "grams": 10},
+        {"label": "牛乳", "food_code": "13003", "grams": 10},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 3},
+        {"label": "こいくちしょうゆ", "food_code": "17007", "grams": 2}
+      ]
+    },
+    {
+      "menu_id": "パルマ風スパゲッティ#1",
+      "process": "blind",
+      "revision": 1,
+      "notes": "乾麺100gをゆで、トマトソースにベーコン・生クリーム少々・粉チーズと仮定（豚肉の加工品はベーコンで代用）。",
+      "ingredients": [
+        {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
+        {"label": "食塩（ゆで汁）", "food_code": "17012", "grams": 1.0},
+        {"label": "トマト（ホール缶）", "food_code": "06184", "grams": 80},
+        {"label": "たまねぎ", "food_code": "06153", "grams": 15},
+        {"label": "ベーコン", "food_code": "11183", "grams": 20},
+        {"label": "生クリーム", "food_code": "13014", "grams": 15},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 5},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 5},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1.5}
+      ]
+    },
+    {
+      "menu_id": "タラコとポップコーンシュリンプのドリア",
+      "process": "blind",
+      "revision": 1,
+      "notes": "ごはんにホワイトソース・たらこ・揚げた小エビ（バナメイえび天ぷらで代用）・粉チーズをのせて焼いたと仮定。",
+      "ingredients": [
+        {"label": "ごはん", "food_code": "01088", "grams": 180},
+        {"label": "ホワイトソース", "food_code": "17109", "grams": 100},
+        {"label": "たらこ", "food_code": "10202", "grams": 15},
+        {"label": "ポップコーンシュリンプ（えび天ぷらで代用）", "food_code": "10416", "grams": 30},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 5},
+        {"label": "有塩バター", "food_code": "14017", "grams": 5},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1}
+      ]
+    },
+    {
+      "menu_id": "ポップコーンシュリンプとタラコのクリームグラタン",
+      "process": "revised",
+      "revision": 2,
+      "revision_notes": [
+        "rev1（blind）: 倍率1.41・食塩 推定5.18g/公式2.2g で very_low。",
+        "rev2: 成分表の「マカロニ ゆで」には、ゆで汁由来の食塩（100gあたり1.2g）が含まれていたため、乾燥40g（ゆで上がり約100g、食塩なし）に変更。「クリームグラタン」の名前どおり生クリーム20gを追加し、バター5→10g。"
+      ],
+      "notes": "マカロニにホワイトソース・生クリーム・たらこ・揚げた小エビ（えび天ぷらで代用）・粉チーズをのせて焼いたと仮定。",
+      "ingredients": [
+        {"label": "マカロニ（乾）", "food_code": "01063", "grams": 40},
+        {"label": "ホワイトソース", "food_code": "17109", "grams": 130},
+        {"label": "生クリーム", "food_code": "13014", "grams": 20},
+        {"label": "たらこ", "food_code": "10202", "grams": 15},
+        {"label": "ポップコーンシュリンプ（えび天ぷらで代用）", "food_code": "10416", "grams": 30},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 8},
+        {"label": "有塩バター", "food_code": "14017", "grams": 10}
+      ]
+    },
+    {
+      "menu_id": "半熟卵のぺペロンチーノ",
+      "process": "tuned_to_official",
+      "revision": 1,
+      "notes": "ペペロンチーノの仮定に半熟卵1個（ゆで卵60gで代用）を加えたもの。元のペペロンチーノの分量が公式値を見て決めたものなので tuned_to_official とする。",
+      "ingredients": [
+        {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 15},
+        {"label": "にんにく", "food_code": "06223", "grams": 5},
+        {"label": "唐辛子（乾）", "food_code": "06172", "grams": 0.5},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 2},
+        {"label": "食塩", "food_code": "17012", "grams": 1.2},
+        {"label": "半熟卵（ゆで卵で代用）", "food_code": "12005", "grams": 60}
+      ]
+    },
+    {
+      "menu_id": "半熟卵のカルボナーラ",
+      "process": "blind",
+      "revision": 1,
+      "notes": "カルボナーラの仮定に半熟卵1個（ゆで卵60gで代用）を加えたもの。",
+      "ingredients": [
+        {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
+        {"label": "食塩（ゆで汁）", "food_code": "17012", "grams": 1.0},
+        {"label": "ベーコン", "food_code": "11183", "grams": 25},
+        {"label": "卵黄", "food_code": "12010", "grams": 15},
+        {"label": "生クリーム", "food_code": "13014", "grams": 40},
+        {"label": "牛乳", "food_code": "13003", "grams": 30},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 8},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 3},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1},
+        {"label": "半熟卵（ゆで卵で代用）", "food_code": "12005", "grams": 60}
+      ]
+    },
+    {
+      "menu_id": "半熟卵のミートソースボロニア風",
+      "process": "blind",
+      "revision": 1,
+      "notes": "ミートソースボロニア風の仮定に半熟卵1個（ゆで卵60gで代用）を加えたもの。",
+      "ingredients": [
+        {"label": "スパゲッティ（乾）", "food_code": "01063", "grams": 100},
+        {"label": "食塩（ゆで汁）", "food_code": "17012", "grams": 1.0},
+        {"label": "牛ひき肉", "food_code": "11089", "grams": 40},
+        {"label": "トマト（ホール缶）", "food_code": "06184", "grams": 50},
+        {"label": "トマトペースト", "food_code": "17035", "grams": 10},
+        {"label": "たまねぎ", "food_code": "06153", "grams": 20},
+        {"label": "にんじん", "food_code": "06214", "grams": 10},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 5},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 3},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1.5},
+        {"label": "半熟卵（ゆで卵で代用）", "food_code": "12005", "grams": 60}
+      ]
+    },
+    {
+      "menu_id": "半熟卵のミラノ風ドリア",
+      "process": "tuned_to_official",
+      "revision": 1,
+      "notes": "ミラノ風ドリアの仮定に半熟卵1個（ゆで卵60gで代用）を加えたもの。元の分量が公式値を見て決めたものなので tuned_to_official とする。",
+      "ingredients": [
+        {"label": "ごはん", "food_code": "01088", "grams": 180},
+        {"label": "ホワイトソース", "food_code": "17109", "grams": 100},
+        {"label": "牛ひき肉", "food_code": "11089", "grams": 20},
+        {"label": "トマト（ホール缶）", "food_code": "06184", "grams": 20},
+        {"label": "たまねぎ", "food_code": "06153", "grams": 15},
+        {"label": "有塩バター", "food_code": "14017", "grams": 5},
+        {"label": "調合油", "food_code": "14006", "grams": 3},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 5},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1.5},
+        {"label": "食塩", "food_code": "17012", "grams": 0.4},
+        {"label": "半熟卵（ゆで卵で代用）", "food_code": "12005", "grams": 60}
+      ]
+    },
+    {
+      "menu_id": "焼チーズ ミラノ風ドリア",
+      "process": "tuned_to_official",
+      "revision": 1,
+      "notes": "ミラノ風ドリアの仮定にチーズ20gをのせて焼いたもの。チーズの種類が不明のためプロセスチーズで代用。元の分量が公式値を見て決めたものなので tuned_to_official とする。",
+      "ingredients": [
+        {"label": "ごはん", "food_code": "01088", "grams": 180},
+        {"label": "ホワイトソース", "food_code": "17109", "grams": 100},
+        {"label": "牛ひき肉", "food_code": "11089", "grams": 20},
+        {"label": "トマト（ホール缶）", "food_code": "06184", "grams": 20},
+        {"label": "たまねぎ", "food_code": "06153", "grams": 15},
+        {"label": "有塩バター", "food_code": "14017", "grams": 5},
+        {"label": "調合油", "food_code": "14006", "grams": 3},
+        {"label": "粉チーズ（パルメザン）", "food_code": "13038", "grams": 5},
+        {"label": "固形ブイヨン", "food_code": "17027", "grams": 1.5},
+        {"label": "食塩", "food_code": "17012", "grams": 0.4},
+        {"label": "焼きチーズ（プロセスチーズで代用）", "food_code": "13040", "grams": 20}
+      ]
+    },
+    {
+      "menu_id": "タラコフォッカチオ",
+      "process": "blind",
+      "revision": 1,
+      "notes": "フォッカチオにたらこ・マヨネーズ・バターを塗って焼いたと仮定（公式アレルゲンの卵・乳から）。",
+      "ingredients": [
+        {"label": "強力粉", "food_code": "01020", "grams": 55},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 5},
+        {"label": "食塩", "food_code": "17012", "grams": 0.4},
+        {"label": "たらこ", "food_code": "10202", "grams": 10},
+        {"label": "マヨネーズ", "food_code": "17042", "grams": 8},
+        {"label": "有塩バター", "food_code": "14017", "grams": 3}
+      ]
+    },
+    {
+      "menu_id": "チーズフォッカチオ",
+      "process": "blind",
+      "revision": 1,
+      "notes": "フォッカチオにチーズ（種類不明のためプロセスチーズで代用）とマヨネーズ（公式アレルゲンの卵から）をのせて焼いたと仮定。",
+      "ingredients": [
+        {"label": "強力粉", "food_code": "01020", "grams": 55},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 5},
+        {"label": "食塩", "food_code": "17012", "grams": 0.4},
+        {"label": "チーズ（プロセスチーズで代用）", "food_code": "13040", "grams": 15},
+        {"label": "マヨネーズ", "food_code": "17042", "grams": 5}
+      ]
+    },
+    {
+      "menu_id": "ターメリックライス",
+      "process": "blind",
+      "revision": 1,
+      "notes": "ごはんを油と塩で調味したと仮定（公式アレルゲンは大豆のみ）。ターメリックは成分表に無く少量のため省略。",
+      "ingredients": [
+        {"label": "ごはん", "food_code": "01088", "grams": 200},
+        {"label": "調合油", "food_code": "14006", "grams": 8},
+        {"label": "食塩", "food_code": "17012", "grams": 1.5}
+      ]
+    },
+    {
+      "menu_id": "チョリソー（辛味ソーセージ）",
+      "process": "blind",
+      "revision": 1,
+      "notes": "辛味のあるソーセージ（ウインナーソーセージ 焼きで代用）に唐辛子と仮定。",
+      "ingredients": [
+        {"label": "ソーセージ（ウインナー 焼きで代用）", "food_code": "11307", "grams": 90},
+        {"label": "唐辛子（乾）", "food_code": "06172", "grams": 1},
+        {"label": "調合油", "food_code": "14006", "grams": 2}
+      ]
+    },
+    {
+      "menu_id": "ビーフステーキ",
+      "process": "blind",
+      "revision": 1,
+      "notes": "輸入牛かたロース（生の値で代用）150gにしょうゆベースのソース、付け合わせにフライドポテトとコーンと仮定。",
+      "ingredients": [
+        {"label": "牛かたロース（輸入）", "food_code": "11064", "grams": 150},
+        {"label": "食塩", "food_code": "17012", "grams": 0.8},
+        {"label": "こいくちしょうゆ", "food_code": "17007", "grams": 8},
+        {"label": "たまねぎ", "food_code": "06153", "grams": 20},
+        {"label": "調合油", "food_code": "14006", "grams": 5},
+        {"label": "フライドポテト", "food_code": "02020", "grams": 40},
+        {"label": "コーン（缶詰）", "food_code": "06180", "grams": 20}
+      ]
+    },
+    {
+      "menu_id": "ラムのランプステーキ",
+      "process": "blind",
+      "revision": 1,
+      "notes": "ラムもも（焼き）120gを塩としょうゆで味付け、付け合わせにフライドポテトとコーンと仮定。",
+      "ingredients": [
+        {"label": "ラムもも（焼き）", "food_code": "11283", "grams": 120},
+        {"label": "食塩", "food_code": "17012", "grams": 0.8},
+        {"label": "こいくちしょうゆ", "food_code": "17007", "grams": 5},
+        {"label": "フライドポテト", "food_code": "02020", "grams": 40},
+        {"label": "コーン（缶詰）", "food_code": "06180", "grams": 20}
+      ]
+    },
+    {
+      "menu_id": "牡蠣のオリーブオイル焼き",
+      "process": "revised",
+      "revision": 2,
+      "revision_notes": [
+        "rev1（blind）: 倍率1.50・食塩 推定1.92g/公式1.2g で very_low。",
+        "rev2: 料理名のとおりオリーブ油が主役の料理のため油を過小に見積もっていたと判断し10→18g。牡蠣とベーコン自体に塩分があるため、別に加える食塩0.3gを削除。"
+      ],
+      "notes": "牡蠣をオリーブ油・にんにく・ベーコン（公式アレルゲンの豚肉から）で焼いたと仮定。",
+      "ingredients": [
+        {"label": "牡蠣", "food_code": "10292", "grams": 60},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 18},
+        {"label": "にんにく", "food_code": "06223", "grams": 3},
+        {"label": "ベーコン", "food_code": "11183", "grams": 10}
+      ]
+    },
+    {
+      "menu_id": "ディアボラ風ハンバーグ#1",
+      "process": "blind",
+      "revision": 1,
+      "notes": "牛ひき肉のハンバーグ（公式アレルゲンに豚肉が無いため牛のみ）に、たまねぎとしょうゆのディアボラ風ソース、付け合わせにフライドポテトとコーンと仮定。",
+      "ingredients": [
+        {"label": "牛ひき肉", "food_code": "11089", "grams": 120},
+        {"label": "たまねぎ（つなぎ）", "food_code": "06153", "grams": 20},
+        {"label": "パン粉（乾燥）", "food_code": "01079", "grams": 8},
+        {"label": "鶏卵", "food_code": "12004", "grams": 10},
+        {"label": "牛乳", "food_code": "13003", "grams": 10},
+        {"label": "食塩", "food_code": "17012", "grams": 0.8},
+        {"label": "調合油", "food_code": "14006", "grams": 3},
+        {"label": "たまねぎ（ソース）", "food_code": "06153", "grams": 40},
+        {"label": "こいくちしょうゆ", "food_code": "17007", "grams": 8},
+        {"label": "オリーブ油", "food_code": "14001", "grams": 5},
+        {"label": "フライドポテト", "food_code": "02020", "grams": 40},
+        {"label": "コーン（缶詰）", "food_code": "06180", "grams": 20}
+      ]
     }
   ]
 }
